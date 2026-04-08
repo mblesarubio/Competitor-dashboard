@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Points · Competitor Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-dark:#1A1926;
+  --bg-light:#F5F5F5;
+  --card-dark:#292830;
+  --card-light:#FFFFFF;
+  --purple:#5D2EE6;
+  --violet:#783291;
+  --orange:#FF9B63;
+  --title-dark:#1A1926;
+  --text-muted:#5C5B66;
+  --hl-purple:#2E0DA6;
+  --hl-violet:#AA46CE;
+  --hl-orange:#FF9B63;
+  --green:#1A7A4A;
+  --green-bg:#EAF5EE;
+  --red:#C0392B;
+  --red-bg:#FDEDEC;
+  --border:#E8E8F0;
+  --radius:10px;
+  --radius-lg:16px;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg-light);color:var(--title-dark);min-height:100vh;font-size:14px}
+
+/* ── NAV ── */
+nav{background:var(--bg-dark);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:200}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.rp-logo{display:flex;align-items:center;gap:8px}
+.rp-icon{width:32px;height:32px}
+.rp-wordmark{font-size:16px;font-weight:700;color:#fff;letter-spacing:-0.3px}
+.nav-divider{width:1px;height:20px;background:rgba(255,255,255,0.15)}
+.nav-title{font-size:13px;color:rgba(255,255,255,0.55);font-weight:400;letter-spacing:0.01em}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-pill{font-size:11px;font-weight:500;padding:4px 12px;border-radius:20px;background:rgba(93,46,230,0.3);color:#a78bfa;border:1px solid rgba(93,46,230,0.4)}
+.nav-date{font-size:12px;color:rgba(255,255,255,0.4)}
+
+/* ── TABS ── */
+.page-tabs{background:#fff;border-bottom:1px solid var(--border);padding:0 2rem;display:flex;gap:0;position:sticky;top:60px;z-index:190}
+.ptab{padding:14px 20px;font-size:13px;font-weight:500;color:var(--text-muted);cursor:pointer;border:none;background:none;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
+.ptab.active{color:var(--purple);border-bottom-color:var(--purple)}
+.ptab:hover:not(.active){color:var(--title-dark)}
+
+/* ── CONTAINER ── */
+.page{display:none;padding:2rem;max-width:1320px;margin:0 auto}
+.page.active{display:block}
+
+/* ── SECTION TITLES ── */
+.section-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:1rem}
+
+/* ── METRIC CARDS ── */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:1.75rem}
+.mc{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.5rem}
+.mc.dark{background:var(--bg-dark)}
+.mc .ml{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:8px}
+.mc.dark .ml{color:rgba(255,255,255,.4)}
+.mc .mv{font-size:28px;font-weight:700;letter-spacing:-1px;color:var(--title-dark)}
+.mc.dark .mv{color:#fff}
+.mc .ms{font-size:12px;color:var(--text-muted);margin-top:3px}
+.mc.dark .ms{color:rgba(255,255,255,.35)}
+.mc.accent .mv{color:var(--purple)}
+
+/* ── OVERVIEW GRID ── */
+.ov-grid{display:grid;grid-template-columns:340px 1fr;gap:16px;margin-bottom:16px}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem}
+.card-hd{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:1rem}
+
+/* ── COMPETITOR LIST ── */
+.cl-item{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;cursor:pointer;transition:background .12s;margin:0 -10px}
+.cl-item:hover{background:var(--bg-light)}
+.cl-item.active{background:#F0EAFF}
+.cl-item.active .cl-name{color:var(--purple);font-weight:600}
+.cl-av{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.cl-name{font-size:13px;font-weight:500;flex:1;color:var(--title-dark)}
+.cl-bar-bg{width:72px;height:4px;background:var(--bg-light);border-radius:2px;overflow:hidden;flex-shrink:0}
+.cl-bar{height:100%;border-radius:2px}
+.cl-n{font-size:12px;font-weight:600;color:var(--text-muted);min-width:20px;text-align:right;flex-shrink:0}
+
+/* ── CHART ── */
+.chart-wrap{position:relative;height:230px}
+
+/* ── MONTHLY BREAKDOWN TABLE ── */
+.mb-table{width:100%;border-collapse:collapse;font-size:12px}
+.mb-table th{text-align:left;padding:8px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);border-bottom:1px solid var(--border)}
+.mb-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.mb-table tr:last-child td{border-bottom:none}
+.mb-table tr:hover td{background:var(--bg-light)}
+.mb-chip{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600}
+
+/* ── DETAIL VIEW ── */
+.back-btn{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:var(--text-muted);cursor:pointer;border:none;background:none;padding:0;margin-bottom:1.25rem;font-family:inherit;transition:color .12s}
+.back-btn:hover{color:var(--title-dark)}
+.det-header{background:var(--bg-dark);border-radius:var(--radius-lg);padding:1.75rem 2rem;margin-bottom:1.25rem;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.det-name{font-size:24px;font-weight:700;color:#fff;letter-spacing:-.5px;margin-bottom:4px}
+.det-sub{font-size:13px;color:rgba(255,255,255,.45)}
+.det-badge{background:rgba(93,46,230,.35);border:1px solid rgba(93,46,230,.5);color:#c4b5fd;font-size:12px;font-weight:600;padding:6px 14px;border-radius:20px;white-space:nowrap}
+.det-stats{display:flex;gap:2rem;margin-top:1rem}
+.det-stat .ds-val{font-size:20px;font-weight:700;color:#fff}
+.det-stat .ds-lbl{font-size:11px;color:rgba(255,255,255,.4);margin-top:2px}
+
+/* ── SUB-TABS ── */
+.sub-tabs{display:flex;gap:6px;margin-bottom:1.25rem;flex-wrap:wrap}
+.stab{font-size:12px;font-weight:500;padding:7px 14px;border-radius:20px;border:1px solid var(--border);background:#fff;color:var(--text-muted);cursor:pointer;font-family:inherit;transition:all .12s}
+.stab:hover{border-color:var(--purple);color:var(--purple)}
+.stab.active{background:var(--purple);color:#fff;border-color:var(--purple)}
+
+/* ── INSIGHT PANELS ── */
+.ins-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px}
+.ins-block{border-radius:var(--radius);padding:1.1rem}
+.ins-block.str{background:var(--green-bg)}
+.ins-block.wk{background:var(--red-bg)}
+.ins-block.diff{background:#F0EAFF}
+.ins-hd{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;display:flex;align-items:center;gap:5px}
+.ins-block.str .ins-hd{color:var(--green)}
+.ins-block.wk .ins-hd{color:var(--red)}
+.ins-block.diff .ins-hd{color:var(--purple)}
+.ins-block ul{list-style:none}
+.ins-block ul li{font-size:12.5px;line-height:1.55;padding:5px 0 5px 14px;position:relative;border-bottom:1px solid rgba(0,0,0,.05);color:var(--title-dark)}
+.ins-block ul li:last-child{border-bottom:none}
+.ins-block.str ul li::before{content:'';position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.ins-block.wk ul li::before{content:'';position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--red)}
+.ins-block.diff ul li::before{content:'';position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--purple)}
+.empty-ins{font-size:12px;color:var(--text-muted);font-style:italic;padding:4px 0}
+
+/* ── QUOTES ── */
+.quotes-section{margin-top:4px}
+.quotes-hd{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:10px}
+.quote-card{background:#fff;border:1px solid var(--border);border-left:3px solid var(--purple);border-radius:0 8px 8px 0;padding:12px 14px;margin-bottom:8px}
+.qt{font-size:13px;line-height:1.6;color:var(--title-dark);font-style:italic;margin-bottom:5px}
+.qm{font-size:11px;color:var(--text-muted);font-weight:500}
+.no-quotes{font-size:12px;color:var(--text-muted);font-style:italic}
+
+/* ── PRICING SECTION ── */
+.pricing-list{margin-top:4px}
+.p-item{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:8px}
+.p-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.p-name{font-size:13px;font-weight:600;color:var(--title-dark)}
+.p-badge{font-size:11px;font-weight:600;background:#FFF4ED;color:#C05A00;padding:3px 10px;border-radius:20px;white-space:nowrap;border:1px solid #FFD5B0}
+.p-quote{font-size:12px;color:var(--text-muted);font-style:italic;line-height:1.55;margin-bottom:4px}
+.p-source{font-size:11px;color:#AAAAAA;font-weight:500}
+
+/* ── DEEP DIVE (CAT VIEW) ── */
+.cat-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:1.25rem}
+.cattab{font-size:11px;font-weight:600;padding:6px 12px;border-radius:20px;border:1px solid var(--border);background:#fff;color:var(--text-muted);cursor:pointer;font-family:inherit;transition:all .12s;text-transform:uppercase;letter-spacing:.04em}
+.cattab:hover{border-color:var(--purple);color:var(--purple)}
+.cattab.active{background:var(--bg-dark);color:#fff;border-color:var(--bg-dark)}
+.cat-panel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+
+/* ── SEPARATORS ── */
+.sep{height:1px;background:var(--border);margin:1.25rem 0}
+
+/* ── AVATAR COLORS ── */
+.av0{background:#EDE9FE;color:#5B21B6}
+.av1{background:#E0F2FE;color:#0369A1}
+.av2{background:#FEF3C7;color:#92400E}
+.av3{background:#FCE7F3;color:#9D174D}
+.av4{background:#D1FAE5;color:#065F46}
+.av5{background:#FEE2E2;color:#991B1B}
+.av6{background:#F3F4F6;color:#374151}
+.av7{background:#FDF4FF;color:#7E22CE}
+.bar0{background:#5D2EE6}.bar1{background:#0EA5E9}.bar2{background:#F59E0B}.bar3{background:#EC4899}.bar4{background:#10B981}.bar5{background:#EF4444}.bar6{background:#6B7280}.bar7{background:#8B5CF6}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){.ov-grid{grid-template-columns:1fr}.ins-grid{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.ins-grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.page{padding:1rem}.cat-panel{grid-template-columns:1fr}}
+
+/* ── ANIMS ── */
+.fade{animation:fi .18s ease}
+@keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="rp-logo">
+      <svg class="rp-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="7" fill="#5D2EE6"/>
+        <path d="M8 8h8c3.314 0 6 2.686 6 6s-2.686 6-6 6H8V8z" fill="white"/>
+        <path d="M14 20l6 4" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="16" cy="14" r="2" fill="#5D2EE6"/>
+      </svg>
+      <span class="rp-wordmark">Red Points</span>
+    </div>
+    <div class="nav-divider"></div>
+    <span class="nav-title">Competitor Intelligence</span>
+  </div>
+  <div class="nav-right">
+    <span class="nav-date" id="nav-date"></span>
+    <span class="nav-pill" id="nav-calls"></span>
+  </div>
+</nav>
+
+<!-- PAGE TABS -->
+<div class="page-tabs">
+  <button class="ptab active" onclick="switchPage('overview',this)">Overview</button>
+  <button class="ptab" onclick="switchPage('competitor',this)">Competitor deep dive</button>
+  <button class="ptab" onclick="switchPage('category',this)">Category analysis</button>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 1 — OVERVIEW
+═══════════════════════════════════════════ -->
+<div class="page active" id="page-overview">
+  <div class="metrics" id="metrics"></div>
+
+  <div class="ov-grid">
+    <div class="card">
+      <div class="card-hd">Competitors — click to deep dive</div>
+      <div id="comp-list"></div>
+    </div>
+    <div class="card">
+      <div class="card-hd">Monthly mention trend</div>
+      <div class="chart-wrap">
+        <canvas id="trendChart" role="img" aria-label="Monthly competitor mention trend">Trend data for tracked competitors.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-hd">Mention frequency by competitor — monthly breakdown</div>
+    <table class="mb-table" id="mb-table">
+      <thead><tr id="mb-head"></tr></thead>
+      <tbody id="mb-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 2 — COMPETITOR DEEP DIVE
+═══════════════════════════════════════════ -->
+<div class="page" id="page-competitor">
+  <div class="sub-tabs" id="comp-selector"></div>
+  <div id="comp-detail"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 3 — CATEGORY ANALYSIS
+═══════════════════════════════════════════ -->
+<div class="page" id="page-category">
+  <div class="cat-tabs" id="cat-selector"></div>
+  <div id="cat-detail"></div>
+</div>
+
+<script>
+// ════════════════════════════════════════════
+// DATA
+// ════════════════════════════════════════════
+const DATA = {"company":"Red Points","last_updated":"2025-03-31","months":{"2025-01":{"label":"Jan 2025","total_calls":18,"competitors":[{"name":"Marqvision","mention_count":18,"categories":{"coverage":{"strengths":["Strong Asia-Pacific marketplace coverage, especially Korea and Japan"],"weaknesses":["Limited enforcement reach in LATAM and MEA regions"],"quotes":[{"text":"Marqvision is really strong in APAC, they have local partnerships in Korea that we just can't match right now","call":"Enterprise deal – TechBrand Co","date":"Jan 14"}]},"service_offering":{"strengths":["Good image recognition for counterfeit product detection"],"weaknesses":["No social media or domain monitoring — purely marketplace focused"],"quotes":[]},"detection":{"strengths":["Fast visual similarity matching for product images"],"weaknesses":["High false positive rate mentioned by multiple prospects"],"quotes":[]},"enforcement":{"strengths":["Automated takedown submission on major marketplaces"],"weaknesses":["Manual follow-up required — no enforcement SLA guarantees"],"quotes":[]},"scale":{"strengths":["Good for mid-market brands"],"weaknesses":["Struggles with enterprise-scale volumes above 10k listings/month"],"quotes":[]},"accuracy":{"strengths":["Strong image-based matching accuracy"],"weaknesses":["Text-based listing detection is weak"],"quotes":[]},"service_level":{"strengths":["Responsive onboarding team"],"weaknesses":["Post-onboarding support is slow"],"quotes":[]},"validation_prioritization":{"strengths":["Dashboard allows manual priority tagging"],"weaknesses":["No AI-based prioritization"],"quotes":[]},"pricing":{"strengths":["Lower entry price for small portfolios"],"weaknesses":["Price scales steeply with number of marketplaces"],"quotes":[{"text":"They quoted €2,800/mo for 5 marketplaces — our Red Points bill covers 40","call":"Discovery – FashionRetail SA","date":"Jan 19","amount":"€2,800/mo"}]},"product_features":{"strengths":["Clean, modern UI praised by users"],"weaknesses":["No API access — no integration with internal brand systems"],"quotes":[]}}},{"name":"Corsearch","mention_count":22,"categories":{"coverage":{"strengths":["Broad global coverage across marketplaces and domains"],"weaknesses":["Social media monitoring is thin compared to core offering"],"quotes":[{"text":"Corsearch has been around forever, their coverage is broad but feels a mile wide and an inch deep","call":"Competitive review – PharmaBrand","date":"Jan 9"}]},"service_offering":{"strengths":["Full trademark clearance plus brand protection in one platform"],"weaknesses":["Brand protection feels bolted on"],"quotes":[]},"detection":{"strengths":["Strong domain and trademark infringement detection"],"weaknesses":["Marketplace counterfeit detection is less mature"],"quotes":[]},"enforcement":{"strengths":["Legal enforcement support through partner network"],"weaknesses":["Takedown speed on marketplaces is slower than dedicated players"],"quotes":[]},"scale":{"strengths":["Built for large enterprises"],"weaknesses":["Overkill and overpriced for brands under 5 trademarks"],"quotes":[]},"accuracy":{"strengths":["High accuracy for trademark similarity searches"],"weaknesses":["Counterfeit product image matching accuracy trails competitors"],"quotes":[]},"service_level":{"strengths":["Dedicated account team for enterprise clients"],"weaknesses":["SMB clients get pooled support with slow response times"],"quotes":[]},"validation_prioritization":{"strengths":["Risk scoring for trademark conflicts"],"weaknesses":["No intelligent prioritization for brand abuse cases"],"quotes":[]},"pricing":{"strengths":["Bundled trademark + protection cost effective for large teams"],"weaknesses":["Minimum contract €80k/year"],"quotes":[{"text":"They wouldn't even start a conversation below €80,000 annual commitment","call":"Lost deal debrief – MidMarketBrand","date":"Jan 20","amount":"€80k/yr min"}]},"product_features":{"strengths":["Comprehensive trademark watching and watch alerts"],"weaknesses":["Outdated UI — multiple prospects mentioned it feels like a 2015 product"],"quotes":[]}}},{"name":"Brandshield","mention_count":15,"categories":{"coverage":{"strengths":["Strong phishing and domain threat detection coverage"],"weaknesses":["Marketplace coverage is secondary to their cyber focus"],"quotes":[]},"service_offering":{"strengths":["Cyber threat + brand protection combined"],"weaknesses":["Not a fit for brands primarily focused on physical counterfeits"],"quotes":[]},"detection":{"strengths":["Excellent phishing site and fake social account detection"],"weaknesses":["Counterfeit physical goods detection is limited"],"quotes":[]},"enforcement":{"strengths":["Fast domain takedowns through registrar relationships"],"weaknesses":["Marketplace enforcement is slow"],"quotes":[]},"scale":{"strengths":["Scales well for digital threat volume"],"weaknesses":["Physical infringement at scale is a gap"],"quotes":[]},"accuracy":{"strengths":["High accuracy for digital/cyber threats"],"weaknesses":["Lower accuracy for product listing infringement"],"quotes":[]},"service_level":{"strengths":["Good customer success team","Proactive threat reporting"],"weaknesses":["Response time slips on non-cyber queries"],"quotes":[]},"validation_prioritization":{"strengths":["Good threat severity scoring for cyber incidents"],"weaknesses":["No prioritization for brand abuse outside cyber category"],"quotes":[]},"pricing":{"strengths":["Competitive for pure cyber brand protection"],"weaknesses":["Poor value if you need marketplace coverage too"],"quotes":[]},"product_features":{"strengths":["Real-time threat dashboard is strong"],"weaknesses":["No marketplace seller intelligence features"],"quotes":[]}}},{"name":"Bolster","mention_count":8,"categories":{"coverage":{"strengths":["Strong US market digital fraud coverage"],"weaknesses":["Limited international marketplace and social coverage"],"quotes":[]},"service_offering":{"strengths":["AI-native approach to phishing and fraud detection"],"weaknesses":["Primarily anti-phishing — not a full brand protection suite"],"quotes":[]},"detection":{"strengths":["Fast AI-driven phishing and scam site detection"],"weaknesses":["Limited counterfeit product or seller detection"],"quotes":[]},"enforcement":{"strengths":["Automated takedown for phishing sites"],"weaknesses":["No marketplace enforcement capability"],"quotes":[]},"scale":{"strengths":["Handles high volume of digital threat URLs"],"weaknesses":["Not designed for physical goods infringement at scale"],"quotes":[]},"accuracy":{"strengths":["High precision on phishing URL classification"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Startup energy — responsive and eager"],"weaknesses":["Smaller team means less enterprise support structure"],"quotes":[]},"validation_prioritization":{"strengths":["AI prioritizes threats automatically"],"weaknesses":["Not customizable to brand-specific rules"],"quotes":[]},"pricing":{"strengths":["Lower price point than enterprise competitors"],"weaknesses":["Pricing not transparent"],"quotes":[]},"product_features":{"strengths":["Modern product built on latest AI stack"],"weaknesses":["Missing brand protection features beyond cyber fraud"],"quotes":[]}}},{"name":"Opsec","mention_count":7,"categories":{"coverage":{"strengths":["Long-standing relationships with customs and law enforcement"],"weaknesses":["Digital coverage is underdeveloped"],"quotes":[]},"service_offering":{"strengths":["End-to-end physical anti-counterfeiting with authentication technology"],"weaknesses":["Digital brand protection is not their core"],"quotes":[]},"detection":{"strengths":["Physical product authentication is best in class"],"weaknesses":["Online listing and digital detection is weak"],"quotes":[]},"enforcement":{"strengths":["Strong customs enforcement and physical seizure capability"],"weaknesses":["Online enforcement is slow and manual"],"quotes":[]},"scale":{"strengths":["Handles large-scale physical anti-counterfeiting programs"],"weaknesses":["Digital operations don't scale well"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Experienced team with deep brand protection expertise"],"weaknesses":["Very traditional service model — not self-serve"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High cost — predominantly for large enterprise"],"quotes":[{"text":"Opsec doesn't come cheap — they're enterprise only and the contract was six figures","call":"Lost deal – LuxuryBrand","date":"Jan 25","amount":"6-figure contract"}]},"product_features":{"strengths":["Physical authentication holograms and security labels are unique"],"weaknesses":["Software platform is outdated — minimal self-service"],"quotes":[]}}},{"name":"Tracer","mention_count":5,"categories":{"coverage":{"strengths":["Good social media and marketplace combined coverage"],"weaknesses":["Smaller dataset than established players"],"quotes":[]},"service_offering":{"strengths":["Social commerce focus is differentiated"],"weaknesses":["Not a full enterprise solution yet"],"quotes":[]},"detection":{"strengths":["Strong Instagram and TikTok seller detection"],"weaknesses":["Limited traditional marketplace coverage"],"quotes":[]},"enforcement":{"strengths":[],"weaknesses":["Enforcement is manual — no automated takedowns yet"],"quotes":[]},"scale":{"strengths":[],"weaknesses":["Not proven at enterprise scale"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Hands-on founder-led support"],"weaknesses":[],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":["Competitive early-stage pricing"],"weaknesses":[],"quotes":[]},"product_features":{"strengths":["Good social seller analytics"],"weaknesses":["Product is still maturing"],"quotes":[]}}},{"name":"Netcraft","mention_count":6,"categories":{"coverage":{"strengths":["Deep internet infrastructure and domain coverage"],"weaknesses":["No marketplace or social coverage"],"quotes":[]},"service_offering":{"strengths":["Best-in-class anti-phishing and cybercrime detection"],"weaknesses":["Not a brand protection tool — it's a cybersecurity tool"],"quotes":[]},"detection":{"strengths":["Unmatched phishing and malicious domain detection"],"weaknesses":["No product counterfeit detection"],"quotes":[]},"enforcement":{"strengths":["Fast phishing site takedowns — industry leading"],"weaknesses":["No marketplace enforcement"],"quotes":[]},"scale":{"strengths":["Massive internet scanning infrastructure"],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":["Very high accuracy for cyber threats"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":[],"weaknesses":["Enterprise-focused — limited SMB support"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["Premium pricing for cyber-focused use case"],"quotes":[]},"product_features":{"strengths":["Unrivalled phishing database"],"weaknesses":["Not designed for brand protection workflows"],"quotes":[]}}},{"name":"Zerofox","mention_count":4,"categories":{"coverage":{"strengths":["Strong social media threat intelligence coverage"],"weaknesses":["Marketplace and physical goods coverage is absent"],"quotes":[]},"service_offering":{"strengths":["Social media brand protection and executive threat monitoring"],"weaknesses":["Not a fit for brands primarily facing counterfeit goods"],"quotes":[]},"detection":{"strengths":["Excellent fake account and impersonation detection on social"],"weaknesses":["No product listing detection"],"quotes":[]},"enforcement":{"strengths":["Good social platform takedown track record"],"weaknesses":[],"quotes":[]},"scale":{"strengths":[],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Good enterprise support"],"weaknesses":[],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High price for social-only use case"],"quotes":[]},"product_features":{"strengths":["Strong social threat intelligence dashboard"],"weaknesses":["Limited beyond social media"],"quotes":[]}}}]},"2025-02":{"label":"Feb 2025","total_calls":21,"competitors":[{"name":"Marqvision","mention_count":24,"categories":{"coverage":{"strengths":["Strong Asia-Pacific marketplace coverage, especially Korea and Japan"],"weaknesses":["Limited enforcement reach in LATAM and MEA regions"],"quotes":[{"text":"They kept bringing up APAC but when we asked about Brazil they went quiet","call":"Discovery call – FashionRetail SA","date":"Feb 19"}]},"service_offering":{"strengths":["Good image recognition for counterfeit product detection"],"weaknesses":["No social media or domain monitoring — purely marketplace focused"],"quotes":[{"text":"Marqvision does marketplaces well but they told us flat out they don't do social or domains","call":"Competitive review – LuxuryBrand","date":"Feb 5"}]},"detection":{"strengths":["Fast visual similarity matching for product images"],"weaknesses":["High false positive rate mentioned by multiple prospects"],"quotes":[]},"enforcement":{"strengths":["Automated takedown submission on major marketplaces"],"weaknesses":["Manual follow-up required — no enforcement SLA guarantees"],"quotes":[]},"scale":{"strengths":["Good for mid-market brands with focused marketplace presence"],"weaknesses":["Struggles with enterprise-scale volumes above 10k listings/month"],"quotes":[]},"accuracy":{"strengths":["Strong image-based matching accuracy"],"weaknesses":["Text-based listing detection is weak — misses keyword variations"],"quotes":[]},"service_level":{"strengths":["Responsive onboarding team"],"weaknesses":["Post-onboarding support is slow — tickets take 3-5 days"],"quotes":[]},"validation_prioritization":{"strengths":["Dashboard allows manual priority tagging"],"weaknesses":["No AI-based prioritization — everything requires human review"],"quotes":[]},"pricing":{"strengths":["Lower entry price for small brand portfolios"],"weaknesses":["Price scales steeply with number of marketplaces monitored"],"quotes":[]},"product_features":{"strengths":["Clean, modern UI praised by users"],"weaknesses":["No API access — no integration with internal brand systems"],"quotes":[]}}},{"name":"Corsearch","mention_count":25,"categories":{"coverage":{"strengths":["Broad global coverage across marketplaces and domains"],"weaknesses":["Social media monitoring is thin"],"quotes":[]},"service_offering":{"strengths":["Full trademark clearance plus brand protection in one platform"],"weaknesses":["Brand protection feels bolted on"],"quotes":[{"text":"They pitched trademark and brand protection together but it felt like two separate products stitched together","call":"Discovery call – ConsumerGoods","date":"Feb 14"}]},"detection":{"strengths":["Strong domain and trademark infringement detection"],"weaknesses":["Marketplace counterfeit detection is less mature"],"quotes":[]},"enforcement":{"strengths":["Legal enforcement support through partner network"],"weaknesses":["Takedown speed on marketplaces is slower"],"quotes":[]},"scale":{"strengths":["Built for large enterprises with complex portfolios"],"weaknesses":["Overkill for brands under 5 trademarks"],"quotes":[]},"accuracy":{"strengths":["High accuracy for trademark similarity searches"],"weaknesses":["Counterfeit product image matching trails competitors"],"quotes":[]},"service_level":{"strengths":["Dedicated account team for enterprise clients"],"weaknesses":["SMB clients get pooled support"],"quotes":[]},"validation_prioritization":{"strengths":["Risk scoring for trademark conflicts"],"weaknesses":["No intelligent prioritization for brand abuse cases"],"quotes":[]},"pricing":{"strengths":["Bundled trademark + protection can be cost effective"],"weaknesses":["Minimum contract €80k/year"],"quotes":[]},"product_features":{"strengths":["Comprehensive trademark watching"],"weaknesses":["Outdated UI"],"quotes":[]}}},{"name":"Brandshield","mention_count":17,"categories":{"coverage":{"strengths":["Strong phishing and domain threat detection coverage"],"weaknesses":["Marketplace coverage is secondary"],"quotes":[{"text":"Brandshield is very cyber-focused — phishing, fake sites, that kind of thing. Marketplace counterfeits are not their strength","call":"Discovery call – FinTechBrand","date":"Feb 6"}]},"service_offering":{"strengths":["Cyber threat + brand protection combined"],"weaknesses":["Not a fit for brands focused on physical counterfeits"],"quotes":[]},"detection":{"strengths":["Excellent phishing site and fake social account detection"],"weaknesses":["Counterfeit physical goods detection is limited"],"quotes":[{"text":"They caught every phishing site we threw at them in the POC but missed half the fake listings","call":"POC debrief – BankingBrand","date":"Feb 11"}]},"enforcement":{"strengths":["Fast domain takedowns through registrar relationships"],"weaknesses":["Marketplace enforcement is slow"],"quotes":[]},"scale":{"strengths":["Scales well for digital threat volume"],"weaknesses":["Physical infringement at scale is a gap"],"quotes":[]},"accuracy":{"strengths":["High accuracy for digital/cyber threats"],"weaknesses":["Lower accuracy for product listing infringement"],"quotes":[]},"service_level":{"strengths":["Good customer success team"],"weaknesses":["Response time slips on non-cyber queries"],"quotes":[{"text":"Their team is great when you have a phishing issue — for anything else you wait","call":"Discovery call – FinTechBrand","date":"Feb 6"}]},"validation_prioritization":{"strengths":["Good threat severity scoring for cyber incidents"],"weaknesses":["No prioritization for brand abuse outside cyber category"],"quotes":[]},"pricing":{"strengths":["Competitive for pure cyber brand protection"],"weaknesses":["Poor value if you need marketplace coverage too"],"quotes":[{"text":"They're cheaper than us but you'd still need another tool for marketplaces","call":"POC debrief – BankingBrand","date":"Feb 11"}]},"product_features":{"strengths":["Real-time threat dashboard is strong","Good alerting system"],"weaknesses":["No marketplace seller intelligence features"],"quotes":[]}}},{"name":"Bolster","mention_count":10,"categories":{"coverage":{"strengths":["Strong US market digital fraud coverage"],"weaknesses":["Limited international marketplace and social coverage"],"quotes":[{"text":"Bolster is very US-centric — as soon as we mentioned Europe they struggled to show relevant examples","call":"Discovery call – EURetailBrand","date":"Feb 20"}]},"service_offering":{"strengths":["AI-native approach to phishing and fraud detection"],"weaknesses":["Primarily anti-phishing — not a full brand protection suite"],"quotes":[]},"detection":{"strengths":["Fast AI-driven phishing and scam site detection"],"weaknesses":["Limited counterfeit product or seller detection"],"quotes":[]},"enforcement":{"strengths":["Automated takedown for phishing sites"],"weaknesses":["No marketplace enforcement capability"],"quotes":[]},"scale":{"strengths":["Handles high volume of digital threat URLs"],"weaknesses":["Not designed for physical goods infringement at scale"],"quotes":[]},"accuracy":{"strengths":["High precision on phishing URL classification"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Startup energy — responsive and eager to help"],"weaknesses":["Smaller team means less enterprise support structure"],"quotes":[{"text":"They're a startup — great responsiveness but I worry about scalability of their support","call":"Discovery call – EURetailBrand","date":"Feb 20"}]},"validation_prioritization":{"strengths":["AI prioritizes threats automatically"],"weaknesses":["Not customizable to brand-specific prioritization rules"],"quotes":[]},"pricing":{"strengths":["Lower price point than enterprise competitors"],"weaknesses":["Pricing not transparent — hard to compare"],"quotes":[]},"product_features":{"strengths":["Modern product built on latest AI stack"],"weaknesses":["Missing brand protection features beyond cyber fraud"],"quotes":[]}}},{"name":"Opsec","mention_count":8,"categories":{"coverage":{"strengths":["Long-standing relationships with customs and law enforcement"],"weaknesses":["Digital coverage is underdeveloped"],"quotes":[{"text":"Opsec has been doing physical seizures for decades but their digital product feels very new and immature","call":"Competitive review – PhysicalGoods","date":"Feb 9"}]},"service_offering":{"strengths":["End-to-end physical anti-counterfeiting with authentication technology"],"weaknesses":["Digital brand protection is not their core"],"quotes":[]},"detection":{"strengths":["Physical product authentication is best in class"],"weaknesses":["Online listing and digital detection is weak"],"quotes":[]},"enforcement":{"strengths":["Strong customs enforcement and physical seizure capability"],"weaknesses":["Online enforcement is slow and manual"],"quotes":[{"text":"If you want stuff seized at the border, Opsec is great. If you want a listing taken down today, go elsewhere","call":"Competitive review – PhysicalGoods","date":"Feb 9"}]},"scale":{"strengths":["Handles large-scale physical anti-counterfeiting programs"],"weaknesses":["Digital operations don't scale well"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Experienced team with deep brand protection expertise"],"weaknesses":["Very traditional service model — not self-serve"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High cost — predominantly for large enterprise"],"quotes":[]},"product_features":{"strengths":["Physical authentication holograms unique"],"weaknesses":["Software platform is outdated"],"quotes":[]}}},{"name":"Tracer","mention_count":6,"categories":{"coverage":{"strengths":["Good social media and marketplace combined coverage"],"weaknesses":["Smaller dataset than established players"],"quotes":[]},"service_offering":{"strengths":["Social commerce focus is differentiated"],"weaknesses":["Not a full enterprise solution yet"],"quotes":[{"text":"Tracer is interesting for social but it's still early stage — not ready for our scale","call":"Discovery call – SocialBrand","date":"Feb 18"}]},"detection":{"strengths":["Strong Instagram and TikTok seller detection"],"weaknesses":["Limited traditional marketplace coverage"],"quotes":[]},"enforcement":{"strengths":[],"weaknesses":["Enforcement is manual — no automated takedowns yet"],"quotes":[]},"scale":{"strengths":[],"weaknesses":["Not proven at enterprise scale"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Hands-on founder-led support"],"weaknesses":[],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":["Competitive early-stage pricing"],"weaknesses":[],"quotes":[]},"product_features":{"strengths":["Good social seller analytics"],"weaknesses":["Product is still maturing"],"quotes":[]}}},{"name":"Netcraft","mention_count":6,"categories":{"coverage":{"strengths":["Deep internet infrastructure and domain coverage"],"weaknesses":["No marketplace or social coverage"],"quotes":[]},"service_offering":{"strengths":["Best-in-class anti-phishing"],"weaknesses":["Not a brand protection tool"],"quotes":[{"text":"Netcraft is a cybersecurity company that some brands use for anti-phishing — it's not really a competitor in the traditional sense","call":"Internal review","date":"Feb 28"}]},"detection":{"strengths":["Unmatched phishing and malicious domain detection"],"weaknesses":["No product counterfeit detection"],"quotes":[]},"enforcement":{"strengths":["Fast phishing site takedowns — industry leading"],"weaknesses":["No marketplace enforcement"],"quotes":[]},"scale":{"strengths":["Massive internet scanning infrastructure"],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":["Very high accuracy for cyber threats"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":[],"weaknesses":["Enterprise-focused — limited SMB support"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["Premium pricing for cyber-focused use case"],"quotes":[]},"product_features":{"strengths":["Unrivalled phishing database"],"weaknesses":["Not designed for brand protection workflows"],"quotes":[]}}},{"name":"Zerofox","mention_count":5,"categories":{"coverage":{"strengths":["Strong social media threat intelligence coverage"],"weaknesses":["Marketplace and physical goods coverage is absent"],"quotes":[]},"service_offering":{"strengths":["Social media brand protection and executive threat monitoring"],"weaknesses":["Not a fit for brands primarily facing counterfeit goods"],"quotes":[{"text":"Zerofox came up in two calls this month — both times the prospect was comparing for social media protection only, not counterfeits","call":"Internal review","date":"Feb 28"}]},"detection":{"strengths":["Excellent fake account and impersonation detection on social"],"weaknesses":["No product listing detection"],"quotes":[]},"enforcement":{"strengths":["Good social platform takedown track record"],"weaknesses":[],"quotes":[]},"scale":{"strengths":[],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Good enterprise support"],"weaknesses":[],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High price for social-only use case"],"quotes":[]},"product_features":{"strengths":["Strong social threat intelligence dashboard"],"weaknesses":["Limited beyond social media"],"quotes":[]}}}]},"2025-03":{"label":"Mar 2025","total_calls":24,"competitors":[{"name":"Marqvision","mention_count":31,"categories":{"coverage":{"strengths":["Strong Asia-Pacific marketplace coverage, especially Korea and Japan"],"weaknesses":["Limited enforcement reach in LATAM and MEA regions"],"quotes":[{"text":"Marqvision is really strong in APAC, they have local partnerships in Korea that we just can't match right now","call":"Enterprise deal – TechBrand Co","date":"Mar 12"},{"text":"They kept bringing up APAC but when we asked about Brazil they went quiet","call":"Discovery call – FashionRetail SA","date":"Mar 19"}]},"service_offering":{"strengths":["Good image recognition for counterfeit product detection"],"weaknesses":["No social media or domain monitoring — purely marketplace focused"],"quotes":[{"text":"Marqvision does marketplaces well but they told us flat out they don't do social or domains","call":"Competitive review – LuxuryBrand","date":"Mar 5"}]},"detection":{"strengths":["Fast visual similarity matching for product images"],"weaknesses":["High false positive rate mentioned by multiple prospects"],"quotes":[{"text":"Their detection is fast but we had to manually review almost 40% of what they flagged","call":"POC debrief – SportswearCo","date":"Mar 22"}]},"enforcement":{"strengths":["Automated takedown submission on major marketplaces"],"weaknesses":["Manual follow-up required — no enforcement SLA guarantees"],"quotes":[{"text":"They automate the submission but after that you're on your own, no one follows up","call":"Enterprise deal – TechBrand Co","date":"Mar 12"}]},"scale":{"strengths":["Good for mid-market brands with focused marketplace presence"],"weaknesses":["Struggles with enterprise-scale volumes above 10k listings/month"],"quotes":[{"text":"When we told them our volume they said they'd need to 'check capacity'","call":"Discovery call – GlobalRetail","date":"Mar 8"}]},"accuracy":{"strengths":["Strong image-based matching accuracy"],"weaknesses":["Text-based listing detection is weak — misses keyword variations"],"quotes":[{"text":"Their image AI is impressive but they completely missed listings that used misspellings of our brand name","call":"POC debrief – SportswearCo","date":"Mar 22"}]},"service_level":{"strengths":["Responsive onboarding team"],"weaknesses":["Post-onboarding support is slow — tickets take 3-5 days"],"quotes":[{"text":"Great during the sales process, once we signed it took a week to get a response to a basic question","call":"Renewal risk – FashionBrand EU","date":"Mar 15"}]},"validation_prioritization":{"strengths":["Dashboard allows manual priority tagging"],"weaknesses":["No AI-based prioritization — everything requires human review"],"quotes":[{"text":"There's no smart queue — you get a list of 500 flagged items and you decide what matters","call":"Competitive review – LuxuryBrand","date":"Mar 5"}]},"pricing":{"strengths":["Lower entry price for small brand portfolios"],"weaknesses":["Price scales steeply with number of marketplaces monitored"],"quotes":[{"text":"They quoted us €2,800 per month for 5 marketplaces — our Red Points bill covers 40","call":"Discovery call – FashionRetail SA","date":"Mar 19","amount":"€2,800/mo (5 mkts)"}]},"product_features":{"strengths":["Clean, modern UI praised by users"],"weaknesses":["No API access — no integration with internal brand systems"],"quotes":[{"text":"The UI is nice but there's no API so we can't connect it to our PIM system","call":"Enterprise deal – TechBrand Co","date":"Mar 12"}]}}},{"name":"Corsearch","mention_count":27,"categories":{"coverage":{"strengths":["Broad global coverage across marketplaces and domains"],"weaknesses":["Social media monitoring is thin compared to core offering"],"quotes":[{"text":"Corsearch has been around forever, their coverage is broad but feels a mile wide and an inch deep","call":"Competitive review – PharmaBrand","date":"Mar 3"}]},"service_offering":{"strengths":["Full trademark clearance plus brand protection in one platform"],"weaknesses":["Brand protection feels bolted on — it's primarily a trademark tool"],"quotes":[{"text":"They pitched trademark and brand protection together but it felt like two separate products stitched together","call":"Discovery call – ConsumerGoods","date":"Mar 14"}]},"detection":{"strengths":["Strong domain and trademark infringement detection"],"weaknesses":["Marketplace counterfeit detection is less mature than specialized tools"],"quotes":[{"text":"For domains and trademark watching they're solid, but for marketplace counterfeits they're behind","call":"Competitive review – PharmaBrand","date":"Mar 3"}]},"enforcement":{"strengths":["Legal enforcement support through partner network"],"weaknesses":["Takedown speed on marketplaces is slower than dedicated players"],"quotes":[{"text":"They have lawyers they can connect you with but for fast takedowns they're not the best","call":"Discovery call – LuxuryWatch","date":"Mar 21"}]},"scale":{"strengths":["Built for large enterprises with complex portfolios"],"weaknesses":["Overkill and overpriced for brands under 5 trademarks"],"quotes":[{"text":"Corsearch is for the big guys — if you have 200 trademarks globally it makes sense","call":"Discovery call – ConsumerGoods","date":"Mar 14"}]},"accuracy":{"strengths":["High accuracy for trademark similarity searches"],"weaknesses":["Counterfeit product image matching accuracy trails competitors"],"quotes":[]},"service_level":{"strengths":["Dedicated account team for enterprise clients"],"weaknesses":["SMB clients get pooled support with slow response times"],"quotes":[{"text":"If you're not spending €100k+ with them you're not a priority","call":"Lost deal debrief – MidMarketBrand","date":"Mar 17"}]},"validation_prioritization":{"strengths":["Risk scoring for trademark conflicts"],"weaknesses":["No intelligent prioritization for brand abuse cases"],"quotes":[]},"pricing":{"strengths":["Bundled trademark + protection can be cost effective for large teams"],"weaknesses":["Minimum contract €80k/year — excludes most mid-market brands"],"quotes":[{"text":"They wouldn't even start a conversation below €80,000 annual commitment","call":"Lost deal debrief – MidMarketBrand","date":"Mar 17","amount":"€80k/yr minimum"}]},"product_features":{"strengths":["Comprehensive trademark watching and watch alerts"],"weaknesses":["Outdated UI — multiple prospects mentioned it feels like a 2015 product"],"quotes":[{"text":"The data is good but the interface looks like it hasn't been touched in 10 years","call":"Competitive review – PharmaBrand","date":"Mar 3"}]}}},{"name":"Brandshield","mention_count":19,"categories":{"coverage":{"strengths":["Strong phishing and domain threat detection coverage"],"weaknesses":["Marketplace coverage is secondary to their cyber focus"],"quotes":[{"text":"Brandshield is very cyber-focused — phishing, fake sites, that kind of thing. Marketplace counterfeits are not their strength","call":"Discovery call – FinTechBrand","date":"Mar 6"}]},"service_offering":{"strengths":["Cyber threat + brand protection combined is unique positioning"],"weaknesses":["Not a fit for brands primarily focused on physical counterfeits"],"quotes":[]},"detection":{"strengths":["Excellent phishing site and fake social account detection"],"weaknesses":["Counterfeit physical goods detection is limited"],"quotes":[{"text":"They caught every phishing site we threw at them in the POC but missed half the fake listings","call":"POC debrief – BankingBrand","date":"Mar 11"}]},"enforcement":{"strengths":["Fast domain takedowns through registrar relationships"],"weaknesses":["Marketplace enforcement is slow — not their core competency"],"quotes":[]},"scale":{"strengths":["Scales well for digital threat volume"],"weaknesses":["Physical infringement at scale is a gap"],"quotes":[]},"accuracy":{"strengths":["High accuracy for digital/cyber threats"],"weaknesses":["Lower accuracy for product listing infringement"],"quotes":[]},"service_level":{"strengths":["Good customer success team","Proactive threat reporting"],"weaknesses":["Response time slips on non-cyber queries"],"quotes":[{"text":"Their team is great when you have a phishing issue — for anything else you wait","call":"Discovery call – FinTechBrand","date":"Mar 6"}]},"validation_prioritization":{"strengths":["Good threat severity scoring for cyber incidents"],"weaknesses":["No prioritization for brand abuse outside cyber category"],"quotes":[]},"pricing":{"strengths":["Competitive for pure cyber brand protection"],"weaknesses":["Poor value if you need marketplace coverage too"],"quotes":[{"text":"They're cheaper than us but you'd still need another tool for marketplaces","call":"POC debrief – BankingBrand","date":"Mar 11"}]},"product_features":{"strengths":["Real-time threat dashboard is strong","Good alerting system"],"weaknesses":["No marketplace seller intelligence features"],"quotes":[]}}},{"name":"Bolster","mention_count":12,"categories":{"coverage":{"strengths":["Strong US market digital fraud coverage"],"weaknesses":["Limited international marketplace and social coverage"],"quotes":[{"text":"Bolster is very US-centric — as soon as we mentioned Europe they struggled to show relevant examples","call":"Discovery call – EURetailBrand","date":"Mar 20"}]},"service_offering":{"strengths":["AI-native approach to phishing and fraud detection"],"weaknesses":["Primarily anti-phishing — not a full brand protection suite"],"quotes":[]},"detection":{"strengths":["Fast AI-driven phishing and scam site detection"],"weaknesses":["Limited counterfeit product or seller detection"],"quotes":[]},"enforcement":{"strengths":["Automated takedown for phishing sites"],"weaknesses":["No marketplace enforcement capability"],"quotes":[]},"scale":{"strengths":["Handles high volume of digital threat URLs"],"weaknesses":["Not designed for physical goods infringement at scale"],"quotes":[]},"accuracy":{"strengths":["High precision on phishing URL classification"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Startup energy — responsive and eager to help"],"weaknesses":["Smaller team means less enterprise support structure"],"quotes":[{"text":"They're a startup — great responsiveness but I worry about scalability of their support","call":"Discovery call – EURetailBrand","date":"Mar 20"}]},"validation_prioritization":{"strengths":["AI prioritizes threats automatically"],"weaknesses":["Not customizable to brand-specific prioritization rules"],"quotes":[]},"pricing":{"strengths":["Lower price point than enterprise competitors"],"weaknesses":["Pricing not transparent — hard to compare"],"quotes":[]},"product_features":{"strengths":["Modern product built on latest AI stack"],"weaknesses":["Missing brand protection features beyond cyber fraud"],"quotes":[]}}},{"name":"Opsec","mention_count":9,"categories":{"coverage":{"strengths":["Long-standing relationships with customs and law enforcement"],"weaknesses":["Digital coverage is underdeveloped — legacy physical focus"],"quotes":[{"text":"Opsec has been doing physical seizures for decades but their digital product feels very new and immature","call":"Competitive review – PhysicalGoods","date":"Mar 9"}]},"service_offering":{"strengths":["End-to-end physical anti-counterfeiting with authentication technology"],"weaknesses":["Digital brand protection is not their core — feels secondary"],"quotes":[]},"detection":{"strengths":["Physical product authentication is best in class"],"weaknesses":["Online listing and digital detection is weak"],"quotes":[]},"enforcement":{"strengths":["Strong customs enforcement and physical seizure capability"],"weaknesses":["Online enforcement is slow and manual"],"quotes":[{"text":"If you want stuff seized at the border, Opsec is great. If you want a listing taken down today, go elsewhere","call":"Competitive review – PhysicalGoods","date":"Mar 9"}]},"scale":{"strengths":["Handles large-scale physical anti-counterfeiting programs"],"weaknesses":["Digital operations don't scale well"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Experienced team with deep brand protection expertise"],"weaknesses":["Very traditional service model — not self-serve"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High cost — predominantly for large enterprise with physical goods focus"],"quotes":[{"text":"Opsec doesn't come cheap — they're enterprise only and the contract was six figures","call":"Lost deal debrief – LuxuryBrand","date":"Mar 25","amount":"6-figure annual"}]},"product_features":{"strengths":["Physical authentication holograms and security labels are unique"],"weaknesses":["Software platform is outdated — minimal self-service"],"quotes":[]}}},{"name":"Tracer","mention_count":8,"categories":{"coverage":{"strengths":["Good social media and marketplace combined coverage"],"weaknesses":["Smaller dataset than established players"],"quotes":[]},"service_offering":{"strengths":["Social commerce focus is differentiated"],"weaknesses":["Not a full enterprise solution yet"],"quotes":[{"text":"Tracer is interesting for social but it's still early stage — not ready for our scale","call":"Discovery call – SocialBrand","date":"Mar 18"}]},"detection":{"strengths":["Strong Instagram and TikTok seller detection"],"weaknesses":["Limited traditional marketplace coverage"],"quotes":[]},"enforcement":{"strengths":[],"weaknesses":["Enforcement is manual — no automated takedowns yet"],"quotes":[]},"scale":{"strengths":[],"weaknesses":["Not proven at enterprise scale"],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Hands-on founder-led support"],"weaknesses":["Will it scale as they grow?"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":["Competitive early-stage pricing"],"weaknesses":[],"quotes":[]},"product_features":{"strengths":["Good social seller analytics"],"weaknesses":["Product is still maturing"],"quotes":[]}}},{"name":"Netcraft","mention_count":7,"categories":{"coverage":{"strengths":["Deep internet infrastructure and domain coverage"],"weaknesses":["No marketplace or social coverage"],"quotes":[]},"service_offering":{"strengths":["Best-in-class anti-phishing and cybercrime detection"],"weaknesses":["Not a brand protection tool — it's a cybersecurity tool"],"quotes":[{"text":"Netcraft is a cybersecurity company that some brands use for anti-phishing — it's not really a competitor in the traditional sense","call":"Internal review","date":"Mar 28"}]},"detection":{"strengths":["Unmatched phishing and malicious domain detection"],"weaknesses":["No product counterfeit detection"],"quotes":[]},"enforcement":{"strengths":["Fast phishing site takedowns — industry leading"],"weaknesses":["No marketplace enforcement"],"quotes":[]},"scale":{"strengths":["Massive internet scanning infrastructure"],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":["Very high accuracy for cyber threats"],"weaknesses":[],"quotes":[]},"service_level":{"strengths":[],"weaknesses":["Enterprise-focused — limited SMB support"],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["Premium pricing for cyber-focused use case"],"quotes":[]},"product_features":{"strengths":["Unrivalled phishing database"],"weaknesses":["Not designed for brand protection workflows"],"quotes":[]}}},{"name":"Zerofox","mention_count":6,"categories":{"coverage":{"strengths":["Strong social media threat intelligence coverage"],"weaknesses":["Marketplace and physical goods coverage is absent"],"quotes":[]},"service_offering":{"strengths":["Social media brand protection and executive threat monitoring"],"weaknesses":["Not a fit for brands primarily facing counterfeit goods"],"quotes":[{"text":"Zerofox came up in two calls this month — both times the prospect was comparing for social media protection only, not counterfeits","call":"Internal review","date":"Mar 28"}]},"detection":{"strengths":["Excellent fake account and impersonation detection on social"],"weaknesses":["No product listing detection"],"quotes":[]},"enforcement":{"strengths":["Good social platform takedown track record"],"weaknesses":[],"quotes":[]},"scale":{"strengths":[],"weaknesses":[],"quotes":[]},"accuracy":{"strengths":[],"weaknesses":[],"quotes":[]},"service_level":{"strengths":["Good enterprise support"],"weaknesses":[],"quotes":[]},"validation_prioritization":{"strengths":[],"weaknesses":[],"quotes":[]},"pricing":{"strengths":[],"weaknesses":["High price for social-only use case"],"quotes":[]},"product_features":{"strengths":["Strong social threat intelligence dashboard"],"weaknesses":["Limited beyond social media"],"quotes":[]}}}]}}};
+
+const CATS = [
+  {key:'coverage',label:'Coverage'},
+  {key:'service_offering',label:'Service offering'},
+  {key:'detection',label:'Detection'},
+  {key:'enforcement',label:'Enforcement'},
+  {key:'scale',label:'Scalability'},
+  {key:'accuracy',label:'Accuracy'},
+  {key:'service_level',label:'Service level'},
+  {key:'validation_prioritization',label:'Validation & prioritization'},
+  {key:'pricing',label:'Pricing'},
+  {key:'product_features',label:'Product features & gaps'}
+];
+
+const AV_CLS=['av0','av1','av2','av3','av4','av5','av6','av7'];
+const BAR_CLS=['bar0','bar1','bar2','bar3','bar4','bar5','bar6','bar7'];
+const LINE_COLORS=['#5D2EE6','#0EA5E9','#F59E0B','#EC4899','#10B981','#EF4444','#6B7280','#8B5CF6'];
+
+let currentCompTab = null;
+let currentCatTab = null;
+let trendChart = null;
+
+// ── helpers ──
+function monthKeys(){return Object.keys(DATA.months).sort()}
+function latestMonth(){const k=monthKeys();return DATA.months[k[k.length-1]]}
+function allComps(){return latestMonth().competitors.map(c=>c.name)}
+function compInMonth(mKey,name){return DATA.months[mKey].competitors.find(c=>c.name===name)}
+function countAllQuotes(comp){let n=0;CATS.forEach(c=>{const d=comp.categories[c.key];if(d)n+=(d.quotes||[]).length});return n}
+
+// ── init ──
+function init(){
+  const lm=latestMonth();
+  const mKeys=monthKeys();
+  document.getElementById('nav-date').textContent=DATA.months[mKeys[mKeys.length-1]].label;
+  document.getElementById('nav-calls').textContent=lm.total_calls+' calls';
+
+  // metrics
+  const total=lm.competitors.reduce((s,c)=>s+c.mention_count,0);
+  const top=lm.competitors.slice().sort((a,b)=>b.mention_count-a.mention_count)[0];
+  const qTotal=lm.competitors.reduce((s,c)=>s+countAllQuotes(c),0);
+  document.getElementById('metrics').innerHTML=`
+    <div class="mc dark"><div class="ml">Total mentions</div><div class="mv">${total}</div><div class="ms">${lm.total_calls} calls · ${DATA.months[mKeys[mKeys.length-1]].label}</div></div>
+    <div class="mc accent"><div class="ml">Top competitor</div><div class="mv" style="font-size:18px;padding-top:4px">${top.name}</div><div class="ms">${top.mention_count} mentions this month</div></div>
+    <div class="mc"><div class="ml">Competitors tracked</div><div class="mv">${lm.competitors.length}</div><div class="ms">across ${mKeys.length} months of data</div></div>
+    <div class="mc"><div class="ml">Quotes captured</div><div class="mv">${qTotal}</div><div class="ms">verbatim from transcripts</div></div>`;
+
+  renderCompList(lm);
+  renderTrend();
+  renderMonthlyTable();
+  renderCompSelector();
+  renderCatSelector();
+}
+
+function renderCompList(lm){
+  const sorted=lm.competitors.slice().sort((a,b)=>b.mention_count-a.mention_count);
+  const max=sorted[0].mention_count;
+  document.getElementById('comp-list').innerHTML=sorted.map((c,i)=>`
+    <div class="cl-item" onclick="goToComp('${c.name}')" id="cli-${i}">
+      <div class="cl-av ${AV_CLS[i%8]}">${c.name.substring(0,2).toUpperCase()}</div>
+      <span class="cl-name">${c.name}</span>
+      <div class="cl-bar-bg"><div class="cl-bar ${BAR_CLS[i%8]}" style="width:${Math.round(c.mention_count/max*100)}%"></div></div>
+      <span class="cl-n">${c.mention_count}</span>
+    </div>`).join('');
+}
+
+function renderTrend(){
+  const mKeys=monthKeys();
+  const comps=allComps();
+  const datasets=comps.map((name,i)=>({
+    label:name,
+    data:mKeys.map(mk=>{const c=compInMonth(mk,name);return c?c.mention_count:0}),
+    borderColor:LINE_COLORS[i%LINE_COLORS.length],
+    backgroundColor:'transparent',
+    tension:.35,pointRadius:4,pointBackgroundColor:LINE_COLORS[i%LINE_COLORS.length],borderWidth:2
+  }));
+  if(trendChart)trendChart.destroy();
+  trendChart=new Chart(document.getElementById('trendChart'),{
+    type:'line',
+    data:{labels:mKeys.map(k=>DATA.months[k].label),datasets},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{boxWidth:10,font:{size:11},color:'#5C5B66',padding:10,usePointStyle:true}}},
+    scales:{x:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{color:'#999',font:{size:11}}},y:{grid:{color:'rgba(0,0,0,0.05)'},ticks:{color:'#999',font:{size:11}},beginAtZero:true}}}
+  });
+}
+
+function renderMonthlyTable(){
+  const mKeys=monthKeys();
+  const comps=allComps();
+  document.getElementById('mb-head').innerHTML='<th>Competitor</th>'+mKeys.map(k=>`<th>${DATA.months[k].label}</th>`).join('')+'<th>Total</th>';
+  document.getElementById('mb-body').innerHTML=comps.map((name,ci)=>{
+    const vals=mKeys.map(mk=>{const c=compInMonth(mk,name);return c?c.mention_count:0});
+    const total=vals.reduce((a,b)=>a+b,0);
+    const maxV=Math.max(...vals);
+    return`<tr>
+      <td><span class="cl-av ${AV_CLS[ci%8]}" style="display:inline-flex;width:28px;height:28px;font-size:10px;border-radius:6px;margin-right:8px;vertical-align:middle">${name.substring(0,2).toUpperCase()}</span><strong>${name}</strong></td>
+      ${vals.map(v=>`<td><span class="mb-chip" style="background:${v===maxV&&v>0?'#EDE9FE':'#F5F5F5'};color:${v===maxV&&v>0?'#5D2EE6':'#5C5B66'}">${v}</span></td>`).join('')}
+      <td><strong>${total}</strong></td>
+    </tr>`;
+  }).join('');
+}
+
+// ── COMPETITOR DEEP DIVE ──
+function renderCompSelector(){
+  const comps=allComps();
+  if(!currentCompTab)currentCompTab=comps[0];
+  document.getElementById('comp-selector').innerHTML=comps.map(name=>`
+    <button class="stab ${name===currentCompTab?'active':''}" onclick="selectComp('${name}')">${name}</button>`).join('');
+  renderCompDetail();
+}
+
+function selectComp(name){currentCompTab=name;renderCompSelector()}
+
+function goToComp(name){
+  currentCompTab=name;
+  switchPage('competitor',document.querySelectorAll('.ptab')[1]);
+  renderCompSelector();
+}
+
+function renderCompDetail(){
+  const lm=latestMonth();
+  const comp=lm.competitors.find(c=>c.name===currentCompTab);
+  if(!comp){document.getElementById('comp-detail').innerHTML='';return}
+
+  const mKeys=monthKeys();
+  const trendVals=mKeys.map(mk=>{const c=compInMonth(mk,currentCompTab);return c?c.mention_count:0});
+  const i=allComps().indexOf(currentCompTab);
+
+  // gather all quotes across all cats
+  let allQuotes=[];
+  CATS.forEach(cat=>{const d=comp.categories[cat.key];if(d)(d.quotes||[]).forEach(q=>allQuotes.push({...q,category:cat.label}))});
+
+  // pricing items
+  const pCat=comp.categories['pricing'];
+  const pQuotes=pCat?pCat.quotes||[]:[];
+  const pStr=pCat?pCat.strengths||[]:[];
+  const pWk=pCat?pCat.weaknesses||[]:[];
+
+  // build strengths/weaknesses/differentiators across all cats
+  let strAll=[],wkAll=[],diffAll=[];
+  CATS.filter(c=>c.key!=='pricing').forEach(cat=>{
+    const d=comp.categories[cat.key];
+    if(!d)return;
+    (d.strengths||[]).forEach(s=>strAll.push({text:s,cat:cat.label}));
+    (d.weaknesses||[]).forEach(w=>wkAll.push({text:w,cat:cat.label}));
+  });
+
+  document.getElementById('comp-detail').innerHTML=`
+  <div class="det-header fade">
+    <div>
+      <div class="det-name">${comp.name}</div>
+      <div class="det-sub">Competitor intelligence · ${latestMonth().total_calls} calls analysed</div>
+      <div class="det-stats">
+        <div class="det-stat"><div class="ds-val">${comp.mention_count}</div><div class="ds-lbl">mentions this month</div></div>
+        <div class="det-stat"><div class="ds-val">${trendVals.reduce((a,b)=>a+b,0)}</div><div class="ds-lbl">total all time</div></div>
+        <div class="det-stat"><div class="ds-val">${countAllQuotes(comp)}</div><div class="ds-lbl">quotes captured</div></div>
+      </div>
+    </div>
+    <span class="det-badge">${comp.mention_count} mentions · Mar 2025</span>
+  </div>
+
+  <!-- STRENGTHS / WEAKNESSES / DIFFERENTIATORS -->
+  <div class="card" style="margin-bottom:12px">
+    <div class="card-hd">Strengths, weaknesses & differentiators</div>
+    <div class="ins-grid">
+      <div class="ins-block str">
+        <div class="ins-hd">✓ Strengths</div>
+        ${strAll.length?'<ul>'+strAll.map(s=>`<li><span style="font-size:10px;font-weight:600;color:#999;display:block;margin-bottom:2px">${s.cat}</span>${s.text}</li>`).join('')+'</ul>':'<div class="empty-ins">No strengths recorded yet.</div>'}
+      </div>
+      <div class="ins-block wk">
+        <div class="ins-hd">✗ Weaknesses</div>
+        ${wkAll.length?'<ul>'+wkAll.map(w=>`<li><span style="font-size:10px;font-weight:600;color:#999;display:block;margin-bottom:2px">${w.cat}</span>${w.text}</li>`).join('')+'</ul>':'<div class="empty-ins">No weaknesses recorded yet.</div>'}
+      </div>
+      <div class="ins-block diff">
+        <div class="ins-hd">◆ Differentiators</div>
+        <ul>
+          ${strAll.filter((_,idx)=>idx<5).map(s=>`<li>${s.text}</li>`).join('')}
+        </ul>
+        ${strAll.length===0?'<div class="empty-ins">No differentiators identified yet.</div>':''}
+      </div>
+    </div>
+    <!-- supporting quotes -->
+    <div class="sep"></div>
+    <div class="quotes-hd">Supporting quotes from call transcripts</div>
+    ${allQuotes.filter(q=>q.category!=='Pricing').slice(0,6).map(q=>`
+      <div class="quote-card">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--purple);margin-bottom:5px">${q.category}</div>
+        <div class="qt">"${q.text}"</div>
+        <div class="qm">${q.call} · ${q.date}</div>
+      </div>`).join('')}
+    ${allQuotes.filter(q=>q.category!=='Pricing').length===0?'<div class="no-quotes">No quotes captured yet — they will appear here as transcripts are processed.</div>':''}
+  </div>
+
+  <!-- PRICING INTELLIGENCE -->
+  <div class="card">
+    <div class="card-hd">Pricing intelligence</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div class="ins-block str"><div class="ins-hd">✓ Pricing strengths</div>${pStr.length?'<ul>'+pStr.map(s=>`<li>${s}</li>`).join('')+'</ul>':'<div class="empty-ins">None recorded.</div>'}</div>
+      <div class="ins-block wk"><div class="ins-hd">✗ Pricing weaknesses</div>${pWk.length?'<ul>'+pWk.map(w=>`<li>${w}</li>`).join('')+'</ul>':'<div class="empty-ins">None recorded.</div>'}</div>
+    </div>
+    <div class="quotes-hd">Pricing quotes from calls</div>
+    ${pQuotes.length?pQuotes.map(q=>`
+      <div class="p-item">
+        <div class="p-top"><span class="p-name">${comp.name}</span>${q.amount?`<span class="p-badge">${q.amount}</span>`:''}</div>
+        <div class="p-quote">"${q.text}"</div>
+        <div class="p-source">${q.call} · ${q.date}</div>
+      </div>`).join(''):'<div class="no-quotes">No pricing quotes captured yet.</div>'}
+  </div>`;
+}
+
+// ── CATEGORY ANALYSIS ──
+function renderCatSelector(){
+  if(!currentCatTab)currentCatTab=CATS[0].key;
+  document.getElementById('cat-selector').innerHTML=CATS.map(c=>`
+    <button class="cattab ${c.key===currentCatTab?'active':''}" onclick="selectCat('${c.key}')">${c.label}</button>`).join('');
+  renderCatDetail();
+}
+
+function selectCat(key){currentCatTab=key;renderCatSelector()}
+
+function renderCatDetail(){
+  const lm=latestMonth();
+  const cat=CATS.find(c=>c.key===currentCatTab);
+  const comps=lm.competitors;
+
+  let html=`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:14px" class="fade">`;
+  comps.forEach((comp,i)=>{
+    const d=comp.categories[currentCatTab];
+    const str=d?d.strengths||[]:[];
+    const wk=d?d.weaknesses||[]:[];
+    const qs=d?d.quotes||[]:[];
+    html+=`<div class="card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <div class="cl-av ${AV_CLS[i%8]}" style="width:36px;height:36px;flex-shrink:0">${comp.name.substring(0,2).toUpperCase()}</div>
+        <div>
+          <div style="font-size:14px;font-weight:600">${comp.name}</div>
+          <div style="font-size:11px;color:var(--text-muted)">${comp.mention_count} mentions this month</div>
+        </div>
+      </div>
+      ${str.length?`<div style="margin-bottom:8px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--green);margin-bottom:6px">Strengths</div><ul class="ins-block str" style="padding:.75rem;border-radius:8px;list-style:none">${str.map(s=>`<li style="font-size:12px;line-height:1.5;padding:4px 0 4px 14px;position:relative;border-bottom:1px solid rgba(0,0,0,.05)"><span style="position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--green);display:block"></span>${s}</li>`).join('')}</ul></div>`:''}
+      ${wk.length?`<div style="margin-bottom:8px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--red);margin-bottom:6px">Weaknesses</div><ul class="ins-block wk" style="padding:.75rem;border-radius:8px;list-style:none">${wk.map(w=>`<li style="font-size:12px;line-height:1.5;padding:4px 0 4px 14px;position:relative;border-bottom:1px solid rgba(0,0,0,.05)"><span style="position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--red);display:block"></span>${w}</li>`).join('')}</ul></div>`:''}
+      ${qs.length?`<div class="sep" style="margin:.75rem 0"></div><div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-bottom:8px">Quotes</div>${qs.map(q=>`<div class="quote-card" style="margin-bottom:6px"><div class="qt">"${q.text}"</div><div class="qm">${q.call} · ${q.date}${q.amount?` · <span style="color:#C05A00;font-weight:600">${q.amount}</span>`:''}</div></div>`).join('')}`:''}
+      ${(!str.length&&!wk.length&&!qs.length)?`<div class="empty-ins" style="padding:.5rem 0">No data captured for this category yet.</div>`:''}
+    </div>`;
+  });
+  html+='</div>';
+  document.getElementById('cat-detail').innerHTML=html;
+}
+
+// ── PAGE SWITCHING ──
+function switchPage(id,btn){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.ptab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  btn.classList.add('active');
+  if(id==='competitor')renderCompSelector();
+  if(id==='category')renderCatSelector();
+}
+
+init();
+</script>
+</body>
+</html>
