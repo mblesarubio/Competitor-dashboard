@@ -1,6 +1,6 @@
 {
   "company": "Red Points",
-  "last_updated": "2025-03-31",
+  "last_updated": "2026-05-04",
   "months": {
     "2025-01": {
       "label": "Jan 2025",
@@ -2460,10 +2460,81 @@
           }
         }
       ]
+    },
+    "2025-H1": {
+      "label": "Pre-June 2025",
+      "total_calls": 1,
+      "competitors": [
+        {
+          "name": "Bolster",
+          "mention_count": 4,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "It's definitely around the same range as the others we've seen.",
+                  "call": "H1-2025 Bolster",
+                  "date": "Pre-June 2025",
+                  "amount": "$25-$3,200/mo (same range as competitors)"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
     }
   },
   "_meta": {
-    "version": 1,
-    "sourceTranscripts": []
+    "version": 2,
+    "sourceTranscripts": [
+      "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg"
+    ]
   }
 }
