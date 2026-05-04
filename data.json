@@ -12217,7 +12217,7 @@
     },
     "2025-07": {
       "label": "Jul 2025",
-      "total_calls": 6,
+      "total_calls": 7,
       "competitors": [
         {
           "name": "Bolster",
@@ -12355,7 +12355,7 @@
         },
         {
           "name": "Corsearch",
-          "mention_count": 24,
+          "mention_count": 25,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -12516,8 +12516,145 @@
           }
         },
         {
+          "name": "Opsec",
+          "mention_count": 12,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited to basic marketplace coverage"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Poor filtering of detections",
+                "Provides raw data dump to customers",
+                "Not good at filtering through detections"
+              ],
+              "quotes": [
+                {
+                  "text": "they are not good at filtering through the detections. They tend to provide their customers sort of the raw data dump",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Manually fills out takedown forms",
+                "Cannot keep up with volume",
+                "Holes in enforcement process"
+              ],
+              "quotes": [
+                {
+                  "text": "competitors are manually filling out these forms or logging into the platforms to do those takedowns",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "they simply just can't keep up with the volume",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot handle large part number volumes",
+                "Limited by analyst hours model",
+                "Struggles with high volume products"
+              ],
+              "quotes": [
+                {
+                  "text": "they work off analyst hours model",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Requires customer to handle false positives",
+                "False positive management creates extra work"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Archaic platform interface",
+                "Less refined user interface",
+                "Excel sheet-based workflows"
+              ],
+              "quotes": [
+                {
+                  "text": "platform and quote unquote is very archaic, meaning like there's a bunch of Excel sheets",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "they're using an older, less refined interface",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Threatens price increases",
+                "Higher cost than alternatives"
+              ],
+              "quotes": [
+                {
+                  "text": "increase in fees",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025",
+                  "amount": "10% threatened increase"
+                },
+                {
+                  "text": "the increase was more of a threat than a promise",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025",
+                  "amount": "$2,500-$2,750/mo"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual approval required for enforcement",
+                "Limited automation capabilities",
+                "Requires manual data entry workflows"
+              ],
+              "quotes": [
+                {
+                  "text": "you manually going through listing by listing or having to approve everything",
+                  "call": "2025-07 Opsec",
+                  "date": "Jul 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Brandshield",
-          "mention_count": 8,
+          "mention_count": 9,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -13050,10 +13187,833 @@
           }
         }
       ]
+    },
+    "2025-06": {
+      "label": "Jun 2025",
+      "total_calls": 4,
+      "competitors": [
+        {
+          "name": "Opsec",
+          "mention_count": 54,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers domain name takedowns",
+                "Music licensing services"
+              ],
+              "weaknesses": [
+                "Limited social media coverage (gaps acknowledged)",
+                "Does not monitor music licensing on social media effectively",
+                "Offline domain monitoring capabilities unclear"
+              ],
+              "quotes": [
+                {
+                  "text": "they may show on like a chart that one URL may have a hundred different shoot-off websites...it takes a little longer for them to go through the 300 offset websites",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Provides domain name takedowns",
+                "Handles online enforcement broadly",
+                "Some music licensing scan capabilities",
+                "Offers domain takedowns",
+                "Music licensing compliance services"
+              ],
+              "weaknesses": [
+                "Limited to capped enforcement models",
+                "Analyst-hour based model restricts volume",
+                "No unlimited enforcement option",
+                "Limited to capped model"
+              ],
+              "quotes": [
+                {
+                  "text": "they operate under a certain amount of hours per week or capped enforcement",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "you have an analyst on who's assigned to you that will do a certain amount of takedowns",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Technology described as very archaic",
+                "Manual detection process time-consuming",
+                "Low detection efficiency for backlinked sites",
+                "Archaic technology",
+                "Poor visibility into backlinked websites"
+              ],
+              "quotes": [
+                {
+                  "text": "their tech was very archaic, to say the least, and so that was like a huge concern we had",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "their tech was very archaic, to say the least, and so that was like a huge concern",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Handles obvious US-based sellers effectively",
+                "Diligent with straightforward cases"
+              ],
+              "weaknesses": [
+                "Slow enforcement on related domains and backlinks",
+                "Limited automation capabilities",
+                "No real-time enforcement visibility",
+                "Manual enforcement process creates delays",
+                "Capped enforcement model",
+                "Ineffective with connected websites/backlinks"
+              ],
+              "quotes": [
+                {
+                  "text": "they may have hundreds of websites attached to one main URL, takes longer to go through",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "someone on their team going in and saying okay we did this this this this and this",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "it works under like a certain amount of hours that you could get per week and then a capped enforcement",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "one URL may have a hundred different kind of like shoot-off websites backlinks on it",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Capped at fixed analyst hours per week",
+                "10 hours per week allocation mentioned",
+                "Cannot scale beyond contracted hours",
+                "Limited capacity for high-volume enforcement",
+                "Limited by capped hours or fixed enforcements per week"
+              ],
+              "quotes": [
+                {
+                  "text": "they allocated hours...it was 10 hours a week",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "if you define it by hours it seems like inevitably you're gonna hit that threshold",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Enforcement percentages appear low due to backlink complexity",
+                "Manual review creates false negatives",
+                "Items slip through cracks"
+              ],
+              "quotes": [
+                {
+                  "text": "I am seeing a lot slip through the cracks",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Responsive to direct requests"
+              ],
+              "weaknesses": [
+                "Recently increased pricing significantly",
+                "Acquired by Crane Authentication causing fee increases",
+                "Communication via email indicates possible delays",
+                "Account management changes after acquisition",
+                "Unhelpful fee increase communication",
+                "Recent acquisition by Crane Authentication"
+              ],
+              "quotes": [
+                {
+                  "text": "increase in fees this year...10% increase",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "got bought out by crane authentication...to offset that is to increase everybody's fees across the board",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "noticed that the emails changed for the representatives",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "they got bought out by crane authentication",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "No intelligent prioritization of high-value infringements",
+                "Manual triage of detections",
+                "No intelligent prioritization of backlinked sites"
+              ],
+              "quotes": [
+                {
+                  "text": "enforcement percentages are low for a particular URL but it's just so many different websites attached to it",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Recently increased prices significantly",
+                "Approaching 10% annual inflation increases",
+                "Price increases not justified with service improvements",
+                "Acquisition-driven fee hikes",
+                "Recent fee increases post-acquisition"
+              ],
+              "quotes": [
+                {
+                  "text": "approaching 10%...not quite but around there",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025",
+                  "amount": "~10% annual increase"
+                },
+                {
+                  "text": "it doesn't exactly justified in terms of how it's been presented",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "they're trying to pass it on...inflation rates in tech",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "they're losing fees and so their way to offset that is to increase everybody's fees across the board",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025",
+                  "amount": "10% increase"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Archaic technology platform",
+                "No real-time dashboards",
+                "Limited reporting capabilities",
+                "No automation rules or tagging system",
+                "Manual chart-based reporting",
+                "No whitelist/blacklist functionality",
+                "Outdated platform technology"
+              ],
+              "quotes": [
+                {
+                  "text": "they'll send us...that one URL may have...shoot-off websites",
+                  "call": "2025-06 Opsec",
+                  "date": "Jun 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 16,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Claims backdoor direct integration with Alibaba"
+              ],
+              "weaknesses": [
+                "May not offer blanket/all-asset coverage despite claims",
+                "Coverage may be limited per asset like Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "Markvisions also claiming to have some backdoor direct integration with Alibaba. What's that about?",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "The impression they got from Marqvision was that it's a blanket program protecting all assets at same price",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers full-service with hands-free enforcement",
+                "Meets on biweekly or monthly basis for updates"
+              ],
+              "weaknesses": [
+                "May rely on limited analyst hours per account",
+                "Enforcement capped by analyst availability"
+              ],
+              "quotes": [
+                {
+                  "text": "Full service, meaning they submit requests based on agreed parameters, pretty much hands-free",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Showed 700 active infringements in single call",
+                "Claims AI bots that crawl the internet"
+              ],
+              "weaknesses": [
+                "Unclear if those 700 were actually missed or already covered",
+                "Detection claims may be marketing buzzwords"
+              ],
+              "quotes": [
+                {
+                  "text": "Marqvision was able to show over 700 active infringements on the call",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "They were talking about AI bots that creep the internet",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Enforcement appears analyst-hour dependent",
+                "Limited enforcement capacity per week"
+              ],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Newer in the space with less established infrastructure"
+              ],
+              "quotes": [
+                {
+                  "text": "Marqvision is newer in the space, not as long as Red Points",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Potential false positives in 700 number claimed",
+                "May be pulling items Red Points doesn't have contracted to protect"
+              ],
+              "quotes": [
+                {
+                  "text": "Large amount of missed items hadn't actually been missed, some were inactive, not relevant",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Positioned as full-service with biweekly meetings"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Pricing not confirmed to be cheaper than Red Points",
+                "May charge per-asset like Red Points despite claims"
+              ],
+              "quotes": [
+                {
+                  "text": "Around $5,600 a month for 20 IPRs with full service",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025",
+                  "amount": "5600/mo"
+                },
+                {
+                  "text": "I don't think that Marqvision is going to be any cheaper",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "Markvision was quite competitive. But you guys were still cheaper.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Claims AI-powered detection technology"
+              ],
+              "weaknesses": [
+                "Backdoor integration likely just for bots/detection, not enforcement advantage",
+                "Features appear standard across industry"
+              ],
+              "quotes": [
+                {
+                  "text": "Backdoor integration is mainly for bots and detection, not secret software for greater enforcements",
+                  "call": "2025-06 Marqvision",
+                  "date": "Jun 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Brandshield",
+          "mention_count": 12,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Caps enforcement volume, limiting scalability"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandshield, they cap you on the amount of enforcements. So the problem is, you would have an analyst hours and it's very hard to really find these infringements using human capital.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Relies heavily on human analyst hours",
+                "Difficult to scale detection capabilities",
+                "Misses large volumes of infringements"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandshield has been more reliant on human capital for analyst hours on detection and enforcement, which has caused a bit of a bottleneck and a backlog of incidents.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "Your current vendor, it seems like there's a lot of huge gaps. Because I'm seeing like thousands of transactions of listings.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Good with copyright and trademark enforcement"
+              ],
+              "weaknesses": [
+                "Enforcement bottleneck due to analyst dependency",
+                "Slower takedown times compared to competitors"
+              ],
+              "quotes": [
+                {
+                  "text": "Ebay, they're really good with copyrights and trademarks, but yeah, not patents.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "It would take a couple weeks to get some of them taken down.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scalability for high enforcement volumes",
+                "Enforcement caps create bottlenecks"
+              ],
+              "quotes": [
+                {
+                  "text": "They cap you on the amount of enforcements.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Responsive account management"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Bernat Massour was excellent. He was fantastic as far as being very attentive, very responsive.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Lower pricing than Red Points"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Brandshield is cheaper, but, you know, we're here because we want to be with the best services out there.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025",
+                  "amount": "lower than Red Points"
+                },
+                {
+                  "text": "Brandshield. And they are significantly less expensive than Redpoint.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025",
+                  "amount": "significantly less than Red Points"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Corsearch",
+          "mention_count": 10,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Revenue recovery program offering"
+              ],
+              "weaknesses": [
+                "Limited to analyst-driven model with capped hours"
+              ],
+              "quotes": [
+                {
+                  "text": "it's an analyst that has X amount of hours per week. Anything outside of that is an extra fee",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Generic prioritization not customized by client",
+                "Archaic technology"
+              ],
+              "quotes": [
+                {
+                  "text": "their prioritization style or the prioritization rules are generic they are not tailored to you",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "their tech was very archaic, to say the least",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Capped enforcement volume",
+                "Limited traction with marketplaces"
+              ],
+              "quotes": [
+                {
+                  "text": "either we're going to do a hundred enforcements and that's a low number, obviously",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited by analyst hour allocation",
+                "Cannot scale beyond contracted capacity"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Generic prioritization",
+                "No customized risk scoring",
+                "Lacks brand-specific tailoring"
+              ],
+              "quotes": [
+                {
+                  "text": "They do a generic prioritization based on typical keywords we're gonna high risk or not",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Recent fee increases",
+                "Analyst hour model increases costs"
+              ],
+              "quotes": [
+                {
+                  "text": "increase in fees this year",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025",
+                  "amount": "10% increase"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited dashboard visibility",
+                "No real-time platform access",
+                "Monthly reporting only"
+              ],
+              "quotes": [
+                {
+                  "text": "typically will be receiving one month on a monthly basis a report from Corsearch",
+                  "call": "2025-06 Corsearch",
+                  "date": "Jun 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Authentics",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Strong Asian marketplace coverage, especially Alibaba"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Fully managed service model",
+                "No per-copyright fees"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Strong ability to find rogue websites",
+                "Effective at discovering hidden infringements"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They showed me, like, 30 that I'd never even seen before, so they're great for finding rogue websites.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Fast takedown times (24 hours)",
+                "High enforcement volume capability"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They were able to get them taken down, most cases in, like, 24 hours.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [
+                "Can handle 4,000-6,000 marketplace takedowns monthly",
+                "Handles 2,000-3,000 social media takedowns monthly"
+              ],
+              "weaknesses": [
+                "High volume requires repeated enforcement against relisting sellers"
+              ],
+              "quotes": [
+                {
+                  "text": "We're currently now doing about 5,000 to 6,000 Marketplace takedowns a month and about 2,000 to 3,000 social media takedowns.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Hands-off fully managed approach",
+                "Good value for price"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "We've never gotten as many takedowns for the price that we're paying.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "No per-copyright fees regardless of volume"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "There is no per copyright fee. So it doesn't matter if they are doing $1,000 or $500. It doesn't change the price.",
+                  "call": "2025-06 Brandshield",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Fully automated enforcement with no manual rule setup required"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "IP House",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
     }
   },
   "_meta": {
-    "version": 16,
+    "version": 17,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -13125,7 +14085,12 @@
       "1rdZhoeKMvKCgv3hIMp6AaqQZvGj8j3x3CUcqCyz2DZs",
       "1qfV19j-YjLvYWukzrQ0dhz3YX65HE3wezCSA3DZoRlM",
       "1_VIPYbLKOBTNXtb7Qan1h3aEYn9di6RBG4umck2OoFI",
-      "1trbtCloe2W62698Wy14eLQ-qkQi9QXMyKO7b0PJOfx4"
+      "1trbtCloe2W62698Wy14eLQ-qkQi9QXMyKO7b0PJOfx4",
+      "1NrJo1nqe4wo4Eg_ZnZSSn_Y-5bVDp9tv6Evq6YyRqrs",
+      "1DX9_R3KHNLglnN3eFwHRcHMG931dp4f3qpiNroPkMLA",
+      "1PiLjfhRheEBIzwgUaSu94-1SGk8-oS7VVBPrPCcdHuU",
+      "1_q4_tv7XeGGuiEPOoRDiCs9N2uSvIaxdppg1G_3lPk8",
+      "1eN53_yYg0Ca4bu9-NEHeQfzm5ZsIbX1k_3R-VLDfvTE"
     ]
   }
 }
