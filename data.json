@@ -3292,11 +3292,622 @@
     },
     "2026-03": {
       "label": "Mar 2026",
-      "total_calls": 3,
+      "total_calls": 8,
       "competitors": [
         {
+          "name": "Corsearch",
+          "mention_count": 26,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Global team across multiple regions (China, EU, US, potential LATAM expansion)"
+              ],
+              "weaknesses": [
+                "Missing YouTube instructional content detection",
+                "Limited social media coverage (Telegram, Discord gaps)",
+                "Not catching Alibaba listings despite claimed monitoring",
+                "Incomplete marketplace surveillance"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch was just like doing manual searches to find these, because these are not using your search keywords",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "I used to manually scan Youtube myself wasting a few hours per month but I always kept finding duplicates",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "We reported them to corsearch a while back, but nothing really changed",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers standalone domain monitoring service"
+              ],
+              "weaknesses": [
+                "Reliant on manual human processes",
+                "Limited automation capabilities",
+                "Narrow scope for off-case scenarios"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch has to use humans to find it and humans to submit the takedown. That's the key difference",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Corsearch does the standalone monitoring as well. Which might make an appealing alternative for some people.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Can detect some marketplace infringements"
+              ],
+              "weaknesses": [
+                "Manual detection process is time-consuming",
+                "Not using image search technology effectively",
+                "Limited automation for recurring content",
+                "Cannot catch edited/modified images efficiently"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch is lacking automation today",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "You may only have 150 incidents, but if that person working on your account has 10 customers, they can't get through 1,500, 15,000 of those takedowns per day",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Can submit takedowns to marketplaces and registrars",
+                "Familiar with enforcement processes",
+                "Domain enforcement capabilities"
+              ],
+              "weaknesses": [
+                "Slow enforcement speed due to manual processes",
+                "Cannot keep up with volume of re-uploads",
+                "Lacks de-indexing capability",
+                "No proactive escalation beyond standard notices",
+                "Does not handle Discord removals efficiently"
+              ],
+              "quotes": [
+                {
+                  "text": "You still have all these listings on Alibaba, so what's going on?",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "they sent some notices to cloudflare, the hosting provider and the registrar. Unfortunately, website removals can take some time",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "corsearch just doesn't look at YouTube at all",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot scale manual processes effectively",
+                "Cannot handle high volume of recurring violations",
+                "Limited capacity to manage customer portfolio"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch can't keep up with the volume",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot differentiate between trademark and copyright infringement reliably",
+                "Struggles with borderline cases"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Provides monthly reporting"
+              ],
+              "weaknesses": [
+                "Frequent account management turnover",
+                "Declining service quality over time",
+                "Less initiative in proactive communication",
+                "Account manager changes every few months"
+              ],
+              "quotes": [
+                {
+                  "text": "I've noticed at least a degradation of services over time. It's not always the same person. They usually switch every few months to a different person",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "It felt really stale. Less initiative, less communication, a bit less of everything",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "No clear prioritization system for high-value infringements",
+                "Manual validation creates delays"
+              ],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Better pricing for brand protection tools"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Has platform/portal for client access",
+                "Domain enforcement and monitoring solutions"
+              ],
+              "weaknesses": [
+                "Limited automation capabilities",
+                "No AI/ML integration mentioned",
+                "Cannot de-index from search engines",
+                "Lacks image search functionality",
+                "Poor categorization and tagging systems"
+              ],
+              "quotes": [
+                {
+                  "text": "Yeah, they have also a tool that I can access if I need them to do actions myself, but I'm not doing it much",
+                  "call": "2026-03 Corsearch",
+                  "date": "Mar 2026"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 17,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Robust in scope for domain protection"
+              ],
+              "weaknesses": [
+                "Limited to domain side"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft seems to be very robust in its scope, but, you know, on just on the domain side",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Robust scope in domain name protection"
+              ],
+              "weaknesses": [
+                "Focused primarily on domain side only",
+                "Limited breadth compared to Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft seems to be very robust in its scope, but on just on the domain side",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot detect hidden/cloaked content",
+                "Fails to identify shell domain attacks with hidden content",
+                "Cannot see real content behind cloaking techniques"
+              ],
+              "quotes": [
+                {
+                  "text": "They cannot detect the warning page removal, attacker still active",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Their system cannot detect when websites are hiding real content",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not contact registrants for shell domains",
+                "Does not proactively contact registrars",
+                "Limited enforcement capability on cloaked sites",
+                "Slow response to IP changes",
+                "Requires manual follow-up instead of automated detection",
+                "Cannot handle domains that change IPs or Cloudflare accounts",
+                "Websites sitting for 6-8 months post-implementation"
+              ],
+              "quotes": [
+                {
+                  "text": "They choose to contact owner but owners always not seeing emails, not contacting registrar",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They are not going to finger the registrant",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They were able to reduce time to take down from five, six days to two days but it was adding a lot of overhead",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Websites and domains sometimes have still been sitting for six to eight months after implementation",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "websites and domains sometimes have still been sitting for you know, six to eight months after implementation",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited by number of automated takedowns purchased",
+                "Cannot scale beyond contracted takedown limits"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow to react to support requests",
+                "Requires constant follow-up and convincing",
+                "Poor engagement with customer on case status"
+              ],
+              "quotes": [
+                {
+                  "text": "We have to convince a lot and spend a lot of time trying to actually prove that we do need help",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Very high pricing",
+                "Very high priced"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft, they asked for actually like 150. But I don't know why they did it. And yeah, they, we can consider them as very high priced",
+                  "call": "2026-03 Bolster #2",
+                  "date": "Mar 2026",
+                  "amount": "150k/yr"
+                },
+                {
+                  "text": "Netcraft, they asked for actually like 150. But I don't know why they did it. And yeah, they, we can consider them as very high priced",
+                  "call": "2026-03 Bolster #1",
+                  "date": "Mar 2026",
+                  "amount": "150k/yr"
+                },
+                {
+                  "text": "Netcraft asked for 150, very high priced",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026",
+                  "amount": "150k/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 12,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Weak domain/URL coverage",
+                "Insufficient marketplace detection breadth",
+                "Limited platform detection capabilities"
+              ],
+              "quotes": [
+                {
+                  "text": "I think I just need to do a lot more on their domain name section and basic URL section.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Maybe it's a bad reflection on us, but some of these I didn't even hear of before. Maybe just Marqvision wasn't covering them, but like Frugo, I'd never heard of before.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Not proactive in finding enforcement solutions",
+                "Limited service depth"
+              ],
+              "quotes": [
+                {
+                  "text": "Marqvision wasn't really proactive in finding those solutions.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Poor Amazon detection coverage",
+                "Basic image matching only",
+                "Unable to detect enforcement evasion tactics"
+              ],
+              "quotes": [
+                {
+                  "text": "Mark wasn't utilizing Amazon enough or drawing from Amazon enough maybe because that's the most I've seen by far from Amazon.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "If I was a seller, I can easily dodge the image matching tool.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited enforcement beyond image matching",
+                "Weak court order citation strategy",
+                "Struggles with repeat offender enforcement"
+              ],
+              "quotes": [
+                {
+                  "text": "Sellers right now are not being detected or enforced through Marqvision because they don't do this referencing a court order like you do.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot scale strategic enforcement approaches",
+                "Lacks managed services capability"
+              ],
+              "quotes": [
+                {
+                  "text": "I need a partner to enforce that at scale.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "High false negative rate on enforcement tactics"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Awkward onboarding experience",
+                "Limited account management support"
+              ],
+              "quotes": [
+                {
+                  "text": "I had a bit of a weird onboarding call with them yesterday.",
+                  "call": "2026-03 Marqvision",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Basic image matching tool only",
+                "Limited strategic enforcement features"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Opsec",
+          "mention_count": 12,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Full-service brand protection provider"
+              ],
+              "weaknesses": [
+                "Acquired multiple companies causing integration confusion",
+                "Lost focus after acquisitions"
+              ],
+              "quotes": [
+                {
+                  "text": "When Opsec purchased Markmonitor, we faced confusion of integration. This is probably why they lost the client.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "With Opsec, our key differentiator is they keep buying new companies, tons of companies just bought each other.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Effective enforcement capability"
+              ],
+              "weaknesses": [
+                "Inconsistent takedown speeds during peak seasons",
+                "Poor visibility into why takedowns delayed"
+              ],
+              "quotes": [
+                {
+                  "text": "Opsec was much more effective and aware of brand needs. Team spent less time dealing with them than Red Points.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Data on time to enforcement showed creeping over two to three weeks pretty regularly, especially in peak retail periods.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Took down legitimate client listings incorrectly"
+              ],
+              "quotes": [
+                {
+                  "text": "With Opsec, we had issues where they would take everyone down, even some of the customers. Then we had to put them back up.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Dedicated account management",
+                "More responsive team"
+              ],
+              "weaknesses": [
+                "Lost dedicated account managers after acquisitions",
+                "Analyst-based service felt impersonal"
+              ],
+              "quotes": [
+                {
+                  "text": "They lost their account manager. Just an analyst based somewhere treating their account. They felt not special anymore.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Issues were getting resolved quicker and more smoothly with Opsec than with Red Points team.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Could not explain enforcement delays or anomalies",
+                "Poor visibility on issues"
+              ],
+              "quotes": [
+                {
+                  "text": "Customer success manager couldn't explain why enforcement took longer and kept pointing to other data points.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [
+                "Competitive pricing advantage"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Opsec offered 40% savings over what Red Points wanted to charge for Smiffy's brand.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026",
+                  "amount": "40% cheaper than Red Points"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Bolster",
-          "mention_count": 8,
+          "mention_count": 11,
           "categories": {
             "coverage": {
               "strengths": [
@@ -3361,7 +3972,9 @@
                 "Achieves 2-day median time to takedown on domains",
                 "Provides RESTful API for bulk domain submission and status updates",
                 "Uses automation and AI heavily for fast processing",
-                "Daily status update emails to customer"
+                "Daily status update emails to customer",
+                "Achieves two day median time to take down",
+                "Uses automation and AI extensively"
               ],
               "weaknesses": [],
               "quotes": [
@@ -3404,6 +4017,11 @@
                   "text": "every day we are getting emails from them telling the status updates, like, hey, we were able to take down such and such domains",
                   "call": "2026-03 Bolster #1",
                   "date": "Mar 2026"
+                },
+                {
+                  "text": "They were able to reduce time to take down from five, six days to two days",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
                 }
               ]
             },
@@ -3423,7 +4041,8 @@
                 "Constant communication and updates",
                 "Responsive to customer requests",
                 "Responds quickly to registry requests",
-                "Provides constant engagement and status communication"
+                "Provides constant engagement and status communication",
+                "Very engaging with customers"
               ],
               "weaknesses": [],
               "quotes": [
@@ -3484,19 +4103,31 @@
                   "call": "2026-03 Bolster #1",
                   "date": "Mar 2026",
                   "amount": "comparable to Red Points"
+                },
+                {
+                  "text": "It's pretty much the same contract as other vendors",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
                 }
               ]
             },
             "product_features": {
               "strengths": [
                 "RESTful API for bulk operations",
-                "Automation capability with AI"
+                "Automation capability with AI",
+                "Provides RESTful API for bulk submission",
+                "Uses significant automation and AI"
               ],
               "weaknesses": [],
               "quotes": [
                 {
                   "text": "they use an automation a lot, and they use an Ai a lot",
                   "call": "2026-03 Bolster #2",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They provided us with like RESTful Api, they use automation a lot, and they use Ai a lot",
+                  "call": "2026-03 Netcraft",
                   "date": "Mar 2026"
                 }
               ]
@@ -3505,7 +4136,7 @@
         },
         {
           "name": "Brandshield",
-          "mention_count": 7,
+          "mention_count": 10,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -3537,7 +4168,11 @@
                 "Fast takedown times (median 2 days)",
                 "Median time with some cases at 7 days",
                 "Achieves 2-day median time to takedown",
-                "Provides daily status updates"
+                "Provides daily status updates",
+                "Achieves two day median time to take down",
+                "Engages proactively with clients daily",
+                "Very responsive to register pushback",
+                "Uses auto-enforcement capabilities"
               ],
               "weaknesses": [],
               "quotes": [
@@ -3554,6 +4189,21 @@
                 {
                   "text": "both providers are reaching this to who do they take the time to take down",
                   "call": "2026-03 Bolster #1",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They were able to reduce time to take down from five, six days to two days",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Every day we are getting emails from them telling the status updates, constant engagement",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They get back to us in the next 15 minutes after they get response from register",
+                  "call": "2026-03 Netcraft",
                   "date": "Mar 2026"
                 }
               ]
@@ -3573,7 +4223,11 @@
                 "Very engaging with customer",
                 "Daily email status updates",
                 "Rapid response to registrar requests (15 minutes)",
-                "Daily engagement and status communication"
+                "Daily engagement and status communication",
+                "Very engaging with customers",
+                "Daily status update emails",
+                "Fast response to register inquiries",
+                "Excellent communication cadence"
               ],
               "weaknesses": [],
               "quotes": [
@@ -3590,6 +4244,11 @@
                 {
                   "text": "every day we are getting emails from them telling the status updates",
                   "call": "2026-03 Bolster #1",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "They're very engaging with us, so once they get some response from register",
+                  "call": "2026-03 Netcraft",
                   "date": "Mar 2026"
                 }
               ]
@@ -3614,18 +4273,265 @@
                   "call": "2026-03 Bolster #1",
                   "date": "Mar 2026",
                   "amount": "comparable to Red Points"
+                },
+                {
+                  "text": "It's pretty much the same contract as other vendors",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Provides RESTful API for bulk domain submission",
+                "Easy status update retrieval"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They provided us with RESTful Api, how we can send domains in bulk, and we can get very easy statuses",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Convey",
+          "mention_count": 7,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers marketplaces, social media, and legal channels"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Convey covers marketplaces, social media, and legal. They divided these channels well.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Full suite covering multiple channels"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Effective AI-based detection system"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Their system with the artificial intelligence is very effective and I'm confident we will have good results.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to take down all listings in four months"
+              ],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Dedicated support to clients",
+                "Close relationship with Italian clients"
+              ],
+              "weaknesses": [
+                "Lack of visibility and transparency",
+                "Not easy to understand what has been done"
+              ],
+              "quotes": [
+                {
+                  "text": "Convey has nice platform, very simple with features, very intuitive. Good team and good approach.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "Feedback is lack of visibility or transparency. Not easy to understand what has been done.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Nice intuitive platform",
+                "Simple features"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They have a very nice platform, very simple with the features, so it's very intuitive.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Zerofox",
+          "mention_count": 7,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Domain name protection focused",
+                "Limited to website/domain side"
+              ],
+              "quotes": [
+                {
+                  "text": "they are really focused on domain name protection",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "their focus is more so just like I think on the domain side of the house",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Focused primarily on domain name protection",
+                "Limited scope compared to comprehensive solutions",
+                "Does much more than brand protection",
+                "Broader scope beyond specialization",
+                "Competes with some customer services"
+              ],
+              "quotes": [
+                {
+                  "text": "Zerofox does a lot more than brand protection. They want to sell darknet research, external attacks surface management",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Good at finding domain names similar to brand names"
+              ],
+              "weaknesses": [
+                "Limited to domain-level analysis",
+                "Does not analyze HTML content within domains"
+              ],
+              "quotes": [
+                {
+                  "text": "Zerofox is probably pretty good at finding sort of those domain names that have some sort of semblance to your name and then they have content",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to demonstrate actual time savings",
+                "Websites and domains sitting for 6-8 months after implementation",
+                "Slow enforcement timeline"
+              ],
+              "quotes": [
+                {
+                  "text": "websites and domains sometimes have still been sitting for you know, six to eight months after implementation",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Lower scalability than Red Points across platforms"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Quick implementation but not effective follow-through",
+                "Budget-friendly but cannot demonstrate actual time savings"
+              ],
+              "quotes": [
+                {
+                  "text": "Zerofox, I agree with you has been, you know, budget oriented, but not able to demonstrate, you know, actual, you know, how it's actually going to save me the time",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Budget friendly",
+                "Budget-friendly pricing"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Zerofox, I agree with you has been budget oriented, but not able to demonstrate actual savings",
+                  "call": "2026-03 Netcraft",
+                  "date": "Mar 2026"
+                },
+                {
+                  "text": "budget oriented",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
                 }
               ]
             },
             "product_features": {
               "strengths": [],
-              "weaknesses": [],
+              "weaknesses": [
+                "Limited to domain/website focus",
+                "Does not cover social media and marketplaces at scale"
+              ],
               "quotes": []
             }
           }
         },
         {
-          "name": "Netcraft",
+          "name": "Clarivate",
           "mention_count": 2,
           "categories": {
             "coverage": {
@@ -3670,23 +4576,140 @@
             },
             "pricing": {
               "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Markmonitor",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Full-service brand protection provider"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
               "weaknesses": [
-                "Very high pricing"
+                "Integration issues when acquired by Opsec"
               ],
               "quotes": [
                 {
-                  "text": "Netcraft, they asked for actually like 150. But I don't know why they did it. And yeah, they, we can consider them as very high priced",
-                  "call": "2026-03 Bolster #2",
-                  "date": "Mar 2026",
-                  "amount": "150k/yr"
-                },
-                {
-                  "text": "Netcraft, they asked for actually like 150. But I don't know why they did it. And yeah, they, we can consider them as very high priced",
-                  "call": "2026-03 Bolster #1",
-                  "date": "Mar 2026",
-                  "amount": "150k/yr"
+                  "text": "We were with Markmonitor, but we faced confusion of integration when Opsec purchased Markmonitor.",
+                  "call": "2026-03 Opsec",
+                  "date": "Mar 2026"
                 }
               ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Rapid7",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers brand protection as part of MDR service"
+              ],
+              "weaknesses": [
+                "Not specialized in brand protection alone"
+              ],
+              "quotes": [
+                {
+                  "text": "part of this Mdr service is exactly brand protection, but we don't want to resell Rapid7 Mdr",
+                  "call": "2026-03 Zerofox",
+                  "date": "Mar 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
             },
             "product_features": {
               "strengths": [],
@@ -3699,7 +4722,7 @@
     }
   },
   "_meta": {
-    "version": 4,
+    "version": 5,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -3711,7 +4734,12 @@
       "1hbigqtf1QP38C8m5VmRIrelhflfk_NlXmIFcyHdIuPI",
       "1rQD0dei0SJ4bRo6cXbfeElcjbUYdm6Nz2ouVDl6xgn0",
       "15Xne9kYpZitKItpZtEWDsqiWL4z-hzLfxRN-pFNh4hg",
-      "1vIdpzR5PFsy5q5Mwb-6ZaLIqVSpaUa4itNmWYalHD2M"
+      "1vIdpzR5PFsy5q5Mwb-6ZaLIqVSpaUa4itNmWYalHD2M",
+      "1VGIeKSbd3J6RAJS72So1HmEoTTjJLPDKhfZcUOkDTD8",
+      "1qX6TYzA86whUlJIh-l_vFC05z2CvX6890URDOuQCkNE",
+      "16e-uiCM7f3ncOQ_x1wInQ9nmGzfDajzqABhVAQuhuHI",
+      "1oBxUe-iiokzlwaJOPGk4Xvt8cH5Yw1eMSq5JC79Qm3Q",
+      "1qKvjuqCVwhtz0S-MG2OEoOrEjktu21bzZwQl-gidnlc"
     ]
   }
 }
