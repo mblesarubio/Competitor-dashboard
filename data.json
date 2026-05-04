@@ -10005,11 +10005,11 @@
     },
     "2025-09": {
       "label": "Sep 2025",
-      "total_calls": 1,
+      "total_calls": 5,
       "competitors": [
         {
           "name": "Brandshield",
-          "mention_count": 12,
+          "mention_count": 13,
           "categories": {
             "coverage": {
               "strengths": [
@@ -10035,7 +10035,8 @@
             },
             "service_offering": {
               "strengths": [
-                "Full suite brand protection offering"
+                "Full suite brand protection offering",
+                "Website and brand protection offerings"
               ],
               "weaknesses": [],
               "quotes": []
@@ -10131,6 +10132,11 @@
                   "text": "They have a reputation for aggressive approach, targeting small companies",
                   "call": "2025-09 Brandshield",
                   "date": "Sep 2025"
+                },
+                {
+                  "text": "they're currently with brand shield too um for brand protection and websites",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
                 }
               ]
             },
@@ -10191,12 +10197,865 @@
               ]
             }
           }
+        },
+        {
+          "name": "Opsec",
+          "mention_count": 12,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited marketplace and channel coverage",
+                "Not covering emerging marketplaces like Fugle"
+              ],
+              "quotes": [
+                {
+                  "text": "We have it in our list of domains. Yeah. Yeah.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Narrow scope compared to Red Points",
+                "Limited to software piracy takedowns only"
+              ],
+              "quotes": [
+                {
+                  "text": "Opsec, it's part of the brand protection industry, okay? It's true that it's a little bit comparing pairs with apples.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Missing significant volumes of infringements",
+                "Not identifying results customers discover manually",
+                "Unclear detection methodology"
+              ],
+              "quotes": [
+                {
+                  "text": "Maybe they're waiting on validation or they hadn't identified, but a lot of very new results that are still out there.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "I'm not sure how much Opset automates. I mean, they send me a list. It doesn't seem like it really is.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Handles takedown letter generation"
+              ],
+              "weaknesses": [
+                "Manual enforcement process",
+                "Unclear enforcement methodology",
+                "No de-indexing from search engines"
+              ],
+              "quotes": [
+                {
+                  "text": "They send me lists of sites and ask should they act on these sites and send a cease and desist letter.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Low volume detection capability",
+                "Cannot handle high-velocity infringements"
+              ],
+              "quotes": [
+                {
+                  "text": "The ones that they give me are like a list of 15. So I'm surprised to see 300. That's a lot.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Produces non-filtered or unclear results",
+                "Sends content in foreign languages without context"
+              ],
+              "quotes": [
+                {
+                  "text": "They send me stuff like that all the time. So that's so, yeah, I'm not sure.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "No dedicated platform or dashboard",
+                "Requires manual Excel-based workflows",
+                "Unclear customer communication and updates"
+              ],
+              "quotes": [
+                {
+                  "text": "An Excel sheet. So it's really like this is so much nicer than having to look at this Excel sheet.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual validation process required from customer",
+                "No automation or smart filtering",
+                "Customer must review and provide approval for each action"
+              ],
+              "quotes": [
+                {
+                  "text": "I have to go through and say yes or no. You know, I look at the sites and make a decision.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "More expensive than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "I believe, be cheaper than Opsec or Crane and provide you with a more autonomous service.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "No platform interface or dashboard",
+                "Excel-based reporting only",
+                "No bulk action capabilities",
+                "No multi-user access or tagging system",
+                "No API for link submissions",
+                "No on-demand reporting tools"
+              ],
+              "quotes": [
+                {
+                  "text": "They send you a report, like an Excel sheet basically for you.",
+                  "call": "2025-09 Opsec",
+                  "date": "Sep 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Corsearch",
+          "mention_count": 7,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Throttled manual searches",
+                "Limited search frequency capability",
+                "Throttled manual searches limited to once per week"
+              ],
+              "quotes": [
+                {
+                  "text": "they are throttled in terms of doing, like, manual searches once. There he is. Well, it's not good.",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "Like every seventh day. So that's definitely something to ask about.",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "They are throttled in terms of doing manual searches once every seventh day.",
+                  "call": "2025-09 Tracer",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Potential backlog with relevant results and takedowns"
+              ],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Backlog with bringing most relevant results"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow onboarding process",
+                "Delayed implementation timeline"
+              ],
+              "quotes": [
+                {
+                  "text": "we had had uh the three -month overlap between Corsearch and red points to sort of complete this whole process",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "Corsearch is now done they are no longer enforcing and almost immediately we see these uptick in counterfeiting activities",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Tracer",
+          "mention_count": 5,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Manual search capability"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "I think they're pretty good. I'm not sure if they do manual searches.",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "I think they're pretty good. I'm not sure if they do manual searches.",
+                  "call": "2025-09 Tracer",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Throttled manual search capability"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "i haven't heard much from Marqvision at least on my you know lately",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Front Wash, already acquired by Netcraft",
+                  "call": "2025-09 Netcraft",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Recorded Future",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Digital risk protection focus"
+              ],
+              "weaknesses": [
+                "Not focused on brand solutions"
+              ],
+              "quotes": [
+                {
+                  "text": "Strong experience with Recorded Future, more focused to digital risk protection",
+                  "call": "2025-09 Netcraft",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to detect images"
+              ],
+              "quotes": [
+                {
+                  "text": "Not able to detect in terms of images, only keywords monitoring",
+                  "call": "2025-09 Netcraft",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Stock Radar",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to detect images"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Gribi",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to detect images"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Markvision",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Throttled manual searches limited to once per week"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Potential backlog with relevant results and takedowns"
+              ],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Backlog with bringing most relevant results"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
+    },
+    "2025-08": {
+      "label": "Aug 2025",
+      "total_calls": 1,
+      "competitors": [
+        {
+          "name": "Bolster",
+          "mention_count": 47,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers email phishing/scam email inbox integration",
+                "Automated ingestion of customer-reported suspicious emails",
+                "Scans malicious website feeds from antivirus companies"
+              ],
+              "weaknesses": [
+                "Limited coverage compared to Red Points domain monitoring"
+              ],
+              "quotes": [
+                {
+                  "text": "bolster system will take that input and run their actions",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "there is a process that their engineering team has built where any input from our scam email inbox, any suspicious links are taken in, scraped or like what have you, and directly ingested",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers comprehensive brand protection solution",
+                "Provides scam email inbox automation capabilities",
+                "Includes domain monitoring and malware detection"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Detects malicious websites hidden in complex domains",
+                "Found 90% coverage of takedowns from scam email source",
+                "Identifies phishing sites and malware websites",
+                "Scans subpages and HTML content for brand mentions"
+              ],
+              "weaknesses": [
+                "Red Points detected 800 domains vs Bolster's limited examples",
+                "Lacks some detection capabilities Red Points has"
+              ],
+              "quotes": [
+                {
+                  "text": "bolster has got a 90% coverage whereas our reported ones are 10%",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "they have a feed of malicious websites so there's feeds of, I think it's mostly antivirus companies",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Takes down links automatically from scam email inbox",
+                "Processes enforcement quickly",
+                "Handles pushbacks and enforcement challenges"
+              ],
+              "weaknesses": [
+                "Cannot enforce on websites without logo or trademark name",
+                "Limited enforcement without IP infringement indicators"
+              ],
+              "quotes": [
+                {
+                  "text": "any suspicious links are taken in and directly ingested into their like process flow",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [
+                "Handles large email volumes (1000+ emails per day)",
+                "Built database of 65,000+ emails"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they mention 10,000 emails in a week",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [
+                "High accuracy on phishing email detection from customer reports"
+              ],
+              "weaknesses": [
+                "Can generate false positives in domain monitoring",
+                "May miss nuanced impersonation cases"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [
+                "Prioritizes email-based threats effectively"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Competitive pricing compared to alternatives"
+              ],
+              "weaknesses": [
+                "More expensive than Red Points' competitive offer"
+              ],
+              "quotes": [
+                {
+                  "text": "their offer was 20,000 flat, a bit cheaper, but it was prepaid for one year",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025",
+                  "amount": "20000/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Offers automation of takedown processes",
+                "Provides analytics and reporting on email threats",
+                "Has built-out stats, numbers, and types tracking"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they've been building out and developing a view and stats and numbers and types",
+                  "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                }
+              ]
+            }
+          }
         }
       ]
     }
   },
   "_meta": {
-    "version": 12,
+    "version": 13,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -10248,7 +11107,12 @@
       "1PqD2M-n6tOkrclAW5EnDHn0CFb0VUzuwQ_VZXMeoCfg",
       "1KIy77VvJUYOXhiWTkSlUqMJPbLPYzb3gaTCAvyHzs_w",
       "1HB2ZGt6e_qP7DhmSprU0EXIFqV7ARKzN4qSLk21_u44",
-      "1iQMZMlST48iBBXLBI9hqomvfC33aQi_o_5Ape83qOK8"
+      "1iQMZMlST48iBBXLBI9hqomvfC33aQi_o_5Ape83qOK8",
+      "1UV95JWmT1ZgLjogfSpn0kWV2mEk5RTN8eviPCOMKt_I",
+      "1KrOI9uc0RxPVtbGWvUIE0DKhsENjeojU6Dka87IlGwA",
+      "1aGhvnLjQDKcjCpCxmeuNSjPwWkOkz1pEeiT7jiWGMbA",
+      "1lzyWYvWa6MJacNYE_xU6YXAZxhxKVys2zbpcEImJU20",
+      "1ee18JuQANOANLj3DAtZCXHi8wJcZ2vhmcGWPdals9G0"
     ]
   }
 }
