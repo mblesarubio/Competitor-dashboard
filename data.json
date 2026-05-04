@@ -4722,11 +4722,180 @@
     },
     "2026-01": {
       "label": "Jan 2026",
-      "total_calls": 5,
+      "total_calls": 7,
       "competitors": [
         {
+          "name": "Bustem",
+          "mention_count": 26,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Strong on Amazon and Walmart takedowns"
+              ],
+              "weaknesses": [
+                "Weak on Alibaba, Aliexpress, Shein, Timu",
+                "Limited Tiktok coverage",
+                "Weak on social media detection",
+                "Manual website detection only"
+              ],
+              "quotes": [
+                {
+                  "text": "Overall they're really strong with Amazon takedowns, Walmart takedowns. Those are pretty much their bread and butter.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "We do have some issues on Alibaba, Aliexpress, Sheen, Timu, the typical Apac regions.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "White glove service positioning",
+                "Integrated auto-enforcement section"
+              ],
+              "weaknesses": [
+                "Limited to marketplace and manual enforcement",
+                "No AI-based website detection"
+              ],
+              "quotes": [
+                {
+                  "text": "They kind of market themselves as like a white glove service. So we're one of their bigger accounts if not their biggest account.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual website detection only",
+                "Cannot detect complex cloaking schemes",
+                "Limited to simple domain searches",
+                "Poor social media detection"
+              ],
+              "quotes": [
+                {
+                  "text": "They're manually searching for websites versus any sort of detection tools.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "Tiktok ads, that's directing to external websites...there's just been a lack of consistency in their portal.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Fast marketplace takedowns (Amazon, Walmart)",
+                "Multi-person monitoring via Slack"
+              ],
+              "weaknesses": [
+                "No weekend coverage",
+                "Does not automate Google de-indexing",
+                "Slow on TikTok/meta platforms"
+              ],
+              "quotes": [
+                {
+                  "text": "I know they do not work over the weekends. So that is in terms of coverage.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "Most of the infringements are early Monday and late Friday. So some of that can kind of drag in over the weekend.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Appears to hit capability limits on volume"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "High false negatives on TikTok",
+                "Inconsistent moderation",
+                "Cannot detect image variations"
+              ],
+              "quotes": [
+                {
+                  "text": "We would report like say 30 images that are the same straight. Our copyrights...27 of them get approved and three get denied.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "If somebody changes the background from our normal gray image to a flowering field, it tends to not get detected.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Slack-based communication",
+                "Weekly updates",
+                "Multiple team members available",
+                "Strategic partnership positioning"
+              ],
+              "weaknesses": [
+                "No weekend support",
+                "Manual approval processes slow velocity"
+              ],
+              "quotes": [
+                {
+                  "text": "They give us a Monday weekly update from the previous week, how many listings were removed for the day at 5 p.m. Eastern.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "There is one specific person that heads up the account, but definitely at least two to four people at any given time have access to the chat.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Built-in auto-enforcement rules",
+                "Slack integration"
+              ],
+              "weaknesses": [
+                "Poor analytics/reporting structure",
+                "No dashboard for complex data",
+                "Limited integrations"
+              ],
+              "quotes": [
+                {
+                  "text": "Their analytics breakdown could definitely be improved. There's just some gaps of things that we would like to see.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Brandshield",
-          "mention_count": 9,
+          "mention_count": 15,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -4744,7 +4913,8 @@
               "strengths": [],
               "weaknesses": [
                 "Scans only once per day or once per week",
-                "Limited proactive detection capabilities"
+                "Limited proactive detection capabilities",
+                "Limited scanning frequency of only twice per month"
               ],
               "quotes": [
                 {
@@ -4759,7 +4929,10 @@
               "weaknesses": [
                 "Limited to seven enforcements per month",
                 "Capped at 1000 enforcements per year",
-                "Customers stuck monitoring after enforcement limit reached"
+                "Customers stuck monitoring after enforcement limit reached",
+                "Avoids de-indexing as a service offering",
+                "Capped at 7 takedowns per month",
+                "Customer must pay extra for additional enforcements"
               ],
               "quotes": [
                 {
@@ -4776,13 +4949,25 @@
                   "text": "they're going to find a website for you and then you're just kind of stuck monitoring what's happening with that site",
                   "call": "2026-01 Brandshield",
                   "date": "Jan 2026"
+                },
+                {
+                  "text": "Brandshield tries to avoid their ability to de-index websites. They want it to be more of a service than just a 'we can take it de-index it.'",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "Brandshield is limited to seven takedowns per month and only scan two times a month",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026"
                 }
               ]
             },
             "scale": {
               "strengths": [],
               "weaknesses": [
-                "Cannot handle high volume of infringements"
+                "Cannot handle high volume of infringements",
+                "Cannot handle volume during peak seasons",
+                "Limited detection and enforcement capacity"
               ],
               "quotes": []
             },
@@ -4806,10 +4991,13 @@
               "quotes": []
             },
             "pricing": {
-              "strengths": [],
+              "strengths": [
+                "25% cheaper than Red Points"
+              ],
               "weaknesses": [
                 "Higher pricing does not remove enforcement caps",
-                "Two-tiered pricing with significant limitations at both levels"
+                "Two-tiered pricing with significant limitations at both levels",
+                "Low pricing comes with severe service limitations"
               ],
               "quotes": [
                 {
@@ -4828,6 +5016,12 @@
                   "text": "Brandshield is limited to seven takedowns per month",
                   "call": "2026-01 Brandshield",
                   "date": "Jan 2026"
+                },
+                {
+                  "text": "They're probably 25% cheaper than red points",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026",
+                  "amount": "Under $15k/yr estimate"
                 }
               ]
             },
@@ -4851,7 +5045,7 @@
         },
         {
           "name": "Marqvision",
-          "mention_count": 8,
+          "mention_count": 9,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -4977,6 +5171,112 @@
           }
         },
         {
+          "name": "Zerofox",
+          "mention_count": 9,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Found social media impersonations on Facebook and TikTok"
+              ],
+              "weaknesses": [
+                "Left many live counterfeit links still active",
+                "Unable to provide comprehensive coverage"
+              ],
+              "quotes": [
+                {
+                  "text": "They would find this they would send this type of takedown request and they would be taken down",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "There's definitely a lot of live links still up here and this was just me taking like five minutes",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Ability to detect social media impersonations"
+              ],
+              "weaknesses": [
+                "Detection effectiveness unclear or limited"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Could send takedown requests for detected items"
+              ],
+              "weaknesses": [
+                "Takedown effectiveness questioned",
+                "Customer ended service citing pros and cons"
+              ],
+              "quotes": [
+                {
+                  "text": "We had been working with zerofox and there were some pros and cons",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scan frequency compared to 24/7 scanning",
+                "Can only scan twice per month limiting volume capture"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Likely limited enforcement like Brandshield at competitive prices",
+                "Pricing structure limits scans and enforcements",
+                "Can enforce only 7 takedowns per month maximum"
+              ],
+              "quotes": [
+                {
+                  "text": "I don't even know if zerofox or brand shield can go as low as like under 10,000 for a year",
+                  "call": "2026-01 Brandshield",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "Brandshield is limited to seven takedowns per month and only scan two times a month",
+                  "call": "2026-01 Zerofox",
+                  "date": "Jan 2026",
+                  "amount": "Under $15k/yr estimate"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Netcraft",
           "mention_count": 8,
           "categories": {
@@ -5092,8 +5392,104 @@
           }
         },
         {
+          "name": "Opsec",
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Highly automated enforcement workflow"
+              ],
+              "weaknesses": [
+                "No platform/dashboard for reporting",
+                "Limited to email-based communication"
+              ],
+              "quotes": [
+                {
+                  "text": "They were not having any platform. We were reporting in Whatsapp and they were presenting the dashboard per month.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Automatic enforcement without manual intervention",
+                "Seamless backend enforcement process"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "The stuff that we do currently with Opsec is super automated. I just like forward them any links and then they'll enforce if they're enforceable.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                },
+                {
+                  "text": "They automatically know that it's enforceable. It's helpful because my workload is tripled since we last talked.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Dedicated account support",
+                "Automated backend processes reduce customer overhead"
+              ],
+              "weaknesses": [
+                "Limited visibility into operations",
+                "No real-time dashboard"
+              ],
+              "quotes": [
+                {
+                  "text": "If there's an issue, they'll like reach out to me and let me know. But for the most part, it just kind of floats in the background.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "No visible dashboard or reporting UI",
+                "WhatsApp-based reporting"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Corsearch",
-          "mention_count": 5,
+          "mention_count": 7,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -5120,9 +5516,17 @@
               "quotes": []
             },
             "detection": {
-              "strengths": [],
+              "strengths": [
+                "Comprehensive domain/TLD search capabilities"
+              ],
               "weaknesses": [],
-              "quotes": []
+              "quotes": [
+                {
+                  "text": "Basically allowed us to search every keyword variation of a Tld, a ccTLD, just every dropdown you could think of.",
+                  "call": "2026-01 Opsec",
+                  "date": "Jan 2026"
+                }
+              ]
             },
             "enforcement": {
               "strengths": [],
@@ -5172,74 +5576,12 @@
               ]
             },
             "product_features": {
-              "strengths": [],
+              "strengths": [
+                "Analytics tool for domain keyword searches"
+              ],
               "weaknesses": [
                 "No automated TikTok shop enforcement portal"
               ],
-              "quotes": []
-            }
-          }
-        },
-        {
-          "name": "Zerofox",
-          "mention_count": 3,
-          "categories": {
-            "coverage": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "service_offering": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "detection": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "enforcement": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "scale": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "accuracy": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "service_level": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "validation_prioritization": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "pricing": {
-              "strengths": [],
-              "weaknesses": [
-                "Likely limited enforcement like Brandshield at competitive prices"
-              ],
-              "quotes": [
-                {
-                  "text": "I don't even know if zerofox or brand shield can go as low as like under 10,000 for a year",
-                  "call": "2026-01 Brandshield",
-                  "date": "Jan 2026"
-                }
-              ]
-            },
-            "product_features": {
-              "strengths": [],
-              "weaknesses": [],
               "quotes": []
             }
           }
@@ -5413,10 +5755,570 @@
           }
         }
       ]
+    },
+    "2026-02": {
+      "label": "Feb 2026",
+      "total_calls": 3,
+      "competitors": [
+        {
+          "name": "Brandshield",
+          "mention_count": 24,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Strong marketplace coverage"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Full suite including cease and desist"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Embedded cease and desist templates in platform",
+                "Ability to send C&D to unauthorized dealers and marketplaces",
+                "Traffic blocking capability while registrar processes"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they have this template cease and desist communications that's directly embedded in the platform that we can go in there and tweak and move",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                },
+                {
+                  "text": "we get to send them to these non-authorized dealers. And that's a big portion of it",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                },
+                {
+                  "text": "one of the things that we did get to see and get some access to when it came to Brand Shield on how they combat, you know, at least resisting web traffic while working with the registrar",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Support team not located in U.S."
+              ],
+              "quotes": [
+                {
+                  "text": "Brandschild doesn't have a support team in the U.S., you should do your due diligence as them",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Native search engine ad monitoring for Google and Meta"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Corsearch",
+          "mention_count": 6,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Acquired multiple companies (Yellow Brand Protection, Incopro)",
+                "Offers cease and desist services",
+                "Works with domain registrars for takedowns",
+                "DMCA takedown coordination",
+                "Google takedown support"
+              ],
+              "weaknesses": [
+                "Limited capacity engagement",
+                "Subject to whack-a-mole domain cycling"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch bought both of them",
+                  "call": "2026-02 Bolster",
+                  "date": "Feb 2026"
+                },
+                {
+                  "text": "We've worked with a product in limited capacity called corsearch. And it involves cease and desist, working with the domains.",
+                  "call": "2026-02 Corsearch",
+                  "date": "Feb 2026"
+                },
+                {
+                  "text": "They get it taken down and they just find a new registrar and they pop up somewhere else. It's been a game of whack-a-mole.",
+                  "call": "2026-02 Corsearch",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Performs cease and desist activities",
+                "Coordinates domain takedowns"
+              ],
+              "weaknesses": [
+                "Ineffective long-term; domains re-register quickly",
+                "Reactive rather than proactive approach"
+              ],
+              "quotes": [
+                {
+                  "text": "The domain registrars, when you say this person is clearly selling a product that is ours and using our name, sometimes they get it taken down and just find a new registrar.",
+                  "call": "2026-02 Corsearch",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited capacity to handle volume"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited account management capacity"
+              ],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Portal-based system for manual enforcement management"
+              ],
+              "weaknesses": [
+                "Requires manual classification of enforcement type per incident",
+                "Lacks automation and AI prioritization"
+              ],
+              "quotes": [
+                {
+                  "text": "Creating a portal that you go in and say, well, here's 300 websites you now need to get your, do this with that one.",
+                  "call": "2026-02 Corsearch",
+                  "date": "Feb 2026"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Econ Law",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Own proprietary IP detection and protection software"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they use their own software for Ip, you know, detection, protection, all of that",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Brand Verity",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Search engine ad detection specialist"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Specialized in fake ads detection"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they're the best ones in doing this type of like detection, right? In terms of like search engine, fake ads detection",
+                  "call": "2026-02 Brandshield",
+                  "date": "Feb 2026"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Best-in-class search engine fake ads detection"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Bustam",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Bolster",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Zerofox",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
     }
   },
   "_meta": {
-    "version": 6,
+    "version": 7,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -5438,7 +6340,12 @@
       "1Im-5fzL5jOXlB7RwA9brFNyiGimbVl0rdBKO-jDT-18",
       "1b4iErRQH4rS8-Rb-XHYo6zuBDn9DMrB1WD5C1Q_xEhg",
       "1ua4fOZ4btOk6nmOx2eBMh47wMb5ZPDGC6RqZwA2-r2s",
-      "19U5bzUcHDzIpz9LOwkf2sMh-FyHLbZgzusxf3IBqp5c"
+      "19U5bzUcHDzIpz9LOwkf2sMh-FyHLbZgzusxf3IBqp5c",
+      "1noVlrxuaMNt4XCyoTb5ZttvLM2CKK8RgSUplNFCRtMk",
+      "1rwMW4Ka1hORTOHIv7EWxPmn5TY2u_tKvNI5tSCKlATM",
+      "1NTqzDATEbs7cL795zgtdAuc0MLudQw84GgiMx8hgK3M",
+      "1W6Gq1LVr7iqxp-ZksLp837l_w0SO2FXwJ0JtzkbTcVE",
+      "1MZ_f7OT4Ku_NaXHnqJiTdTkdU47ZInd3LIpfRm5bCFA"
     ]
   }
 }
