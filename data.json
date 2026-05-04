@@ -6829,11 +6829,515 @@
     },
     "2025-12": {
       "label": "Dec 2025",
-      "total_calls": 1,
+      "total_calls": 6,
       "competitors": [
         {
+          "name": "Marqvision",
+          "mention_count": 26,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Strong marketplace coverage",
+                "Proactive in Korean marketplace monitoring",
+                "Strong marketplace coverage in Asia"
+              ],
+              "weaknesses": [
+                "Limited to Asian markets",
+                "Not global solution"
+              ],
+              "quotes": [
+                {
+                  "text": "we have a distributor in Korea they've asked us to use a Marqvision to go after marketplace",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Marqvision is probably definitely better than Snapdragon they are an actual technology company so they do have a software",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "the issue about Marqvision is they're mostly limited to Asian markets that's their bread and butter",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Specialized in marketplace monitoring",
+                "Covers marketplaces and social media",
+                "Actual technology company with software platform"
+              ],
+              "weaknesses": [
+                "Limited geographic scope",
+                "Not suitable for global brands"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "May not detect every day"
+              ],
+              "quotes": [
+                {
+                  "text": "Brand shield who may not detect every day. That's something you want to be mindful of",
+                  "call": "2025-12 Marqvision",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Automation capabilities after initial setup"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [
+                "Automation capability goes on autopilot after initial manual phase"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "When we were speaking with Marqvision and brand shield in the beginning there's some manual lift but then it basically goes on autopilot",
+                  "call": "2025-12 Brandshield",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Automation after initial manual phase"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 22,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Slower takedown timelines reported by customers",
+                "Does not cover marketplaces",
+                "Limited to website enforcement only"
+              ],
+              "quotes": [
+                {
+                  "text": "we signed up six months ago and these websites are still up",
+                  "call": "2025-12 Bolster",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "they don't do marketplace although it's not our immediate focus it is a growing concern",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "they don't do marketplace although it's not our immediate focus it is a growing concern",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft also super great meeting what I didn't like about it is that they don't do marketplace",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft doesn't do Marketplace",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited capabilities compared to competitors",
+                "Limited to fake website removal only",
+                "No marketplace monitoring capability",
+                "Limited to fake websites only",
+                "No marketplace coverage"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft not having the fake or the marketplaces that may not they may no longer be someone that you're considering",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft's main there one of their main draws is hey we can get started quick",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Fast onboarding capability",
+                "Can initiate takedowns quickly for demonstration purposes",
+                "Offers quick start capability",
+                "Can execute takedowns before onboarding completion"
+              ],
+              "weaknesses": [
+                "Enforcement effectiveness issues",
+                "Websites still active after 6 months",
+                "Quick start does not guarantee long-term execution capability",
+                "Quick start doesn't guarantee execution quality",
+                "May lack long-term scaling effectiveness"
+              ],
+              "quotes": [
+                {
+                  "text": "they can get started in a day",
+                  "call": "2025-12 Bolster",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "get started quick doesn't necessarily mean you know from an execution standpoint",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft offering that before I'm familiar with the space mainly because red points is the leader",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "get started quick doesn't necessarily mean you know from an execution standpoint",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft had offered which was unexpected they offer this as part of their proposals",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft said that they can take one down for you before the Christmas season",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited ability to scale website takedowns over 12 months",
+                "Unclear ability to handle multiple scaled websites long-term"
+              ],
+              "quotes": [
+                {
+                  "text": "get started quick is great but get started from a long-term perspective of okay are we gonna be able to take down multiple scaled out websites",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "get started quick is great but get started from a long-term perspective of okay are we gonna be able to take down multiple scaled out websites",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Proactive outreach",
+                "Responsive to customer needs",
+                "Responsive to customer inquiries"
+              ],
+              "weaknesses": [
+                "Poor enforcement results on website takedowns"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft was proactively reaching out to us they were super great",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "they were really great to talk to",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Lower cost relative to some competitors"
+              ],
+              "weaknesses": [
+                "Premium pricing compared to value delivered"
+              ],
+              "quotes": [
+                {
+                  "text": "netcraft proposal they're pretty high",
+                  "call": "2025-12 Bolster",
+                  "date": "Dec 2025",
+                  "amount": "~24-25k/yr"
+                },
+                {
+                  "text": "Netcraft was at 2800",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025",
+                  "amount": "2800/yr"
+                },
+                {
+                  "text": "Netcraft was at 2800",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025",
+                  "amount": "2800/mo"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Offers courtesy takedowns as part of proposal",
+                "Offers courtesy takedown demonstrations"
+              ],
+              "weaknesses": [
+                "No marketplace module available"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft had offered they offer this as part of their proposals like we offer always say we have two courtesy takedowns",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "Netcraft offering that before I'm familiar with the space they offer this as part of their proposals like we offer always say we have two courtesy takedowns",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Brandshield",
+          "mention_count": 19,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "May not detect every day"
+              ],
+              "quotes": [
+                {
+                  "text": "Some providers namely brand shield who may not detect every day",
+                  "call": "2025-12 Brandshield",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "May not detect every day"
+              ],
+              "quotes": [
+                {
+                  "text": "Brand shield who may not detect every day. That's something you want to be mindful of",
+                  "call": "2025-12 Marqvision",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Automation capabilities after initial setup"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [
+                "Automation on autopilot after initial setup"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "When we were speaking with Marqvision and brand shield in the beginning there's some manual lift for us but then it basically goes on autopilot",
+                  "call": "2025-12 Brandshield",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "Automation after initial manual phase"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Snapdragon",
+          "mention_count": 10,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "No marketplace coverage mentioned"
+              ],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers similar marketplace and website protection"
+              ],
+              "weaknesses": [
+                "Limited to specific services without marketplace option"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Less automated than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "you guys might be more automated than they are",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Proactive outreach"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Snapdragon was proactively reaching out to us they were super great",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Snapdragon is at 2450",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025",
+                  "amount": "2450/yr or monthly"
+                },
+                {
+                  "text": "Snapdragon is at 2450",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025",
+                  "amount": "2450/mo"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Less automated than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "you guys might be more automated than they are",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Bolster",
-          "mention_count": 8,
+          "mention_count": 9,
           "categories": {
             "coverage": {
               "strengths": [
@@ -6926,27 +7430,138 @@
           }
         },
         {
-          "name": "Netcraft",
+          "name": "Corsearch",
           "mention_count": 6,
           "categories": {
             "coverage": {
               "strengths": [],
               "weaknesses": [
-                "Slower takedown timelines reported by customers"
+                "Operates on analyst model rather than technology-driven",
+                "Less deep coverage than Red Points",
+                "Gaps in detection compared to Red Points"
               ],
               "quotes": [
                 {
-                  "text": "we signed up six months ago and these websites are still up",
-                  "call": "2025-12 Bolster",
+                  "text": "corsearch operates on like an analyst model still. And they also buy a lot of companies, so they're kind of a Frankenstein organization",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "corsearch, I get the biggest gap when they're covered and when they're a current corsearch client. I find more infringements for them",
+                  "call": "2025-12 Corsearch",
                   "date": "Dec 2025"
                 }
               ]
             },
             "service_offering": {
+              "strengths": [
+                "Long operational history",
+                "Long-established player in market"
+              ],
+              "weaknesses": [
+                "Started as trademark service, not brand protection",
+                "Analyst-based approach limits scale",
+                "Operates on outdated analyst model",
+                "Fragmented through acquisitions"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch started off as like a trademark service and not brand production",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                },
+                {
+                  "text": "corsearch operates on like an analyst model still and they also buy a lot of companies so they're kind of a Frankenstein organization",
+                  "call": "2025-12 Netcraft",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "detection": {
               "strengths": [],
               "weaknesses": [
-                "Limited capabilities compared to competitors"
+                "Uses analysts to search rather than technology",
+                "Cannot search as deeply as technology-driven competitors",
+                "Limited scalability in detection"
               ],
+              "quotes": [
+                {
+                  "text": "they're using analysts to search, that it's not going as deep as our technology because we're using technology to search, not analysts",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited by analyst-based model",
+                "Cannot handle unlimited detections",
+                "Not as scalable as technology-driven solutions"
+              ],
+              "quotes": [
+                {
+                  "text": "corsearch has the biggest gap in detection when they're a current client, suggesting limited technological scale",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Offers analyst hours without limits"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "I asked the corsearch guy about like analyst hours and if there were limits on that And he said no",
+                  "call": "2025-12 Corsearch",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Vories",
+          "mention_count": 4,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "unauthorized seller handling",
+                "enforcement services"
+              ],
+              "weaknesses": [],
               "quotes": []
             },
             "detection": {
@@ -6956,16 +7571,16 @@
             },
             "enforcement": {
               "strengths": [
-                "Fast onboarding capability"
+                "send cease and desist letters",
+                "litigation support"
               ],
               "weaknesses": [
-                "Enforcement effectiveness issues",
-                "Websites still active after 6 months"
+                "cease and desist letters work only 10% of time"
               ],
               "quotes": [
                 {
-                  "text": "they can get started in a day",
-                  "call": "2025-12 Bolster",
+                  "text": "Cease and desist letters work maybe 10% of the time",
+                  "call": "2025-12 Tracer",
                   "date": "Dec 2025"
                 }
               ]
@@ -6982,9 +7597,7 @@
             },
             "service_level": {
               "strengths": [],
-              "weaknesses": [
-                "Poor enforcement results on website takedowns"
-              ],
+              "weaknesses": [],
               "quotes": []
             },
             "validation_prioritization": {
@@ -6993,20 +7606,214 @@
               "quotes": []
             },
             "pricing": {
-              "strengths": [
-                "Lower cost relative to some competitors"
-              ],
+              "strengths": [],
               "weaknesses": [
-                "Premium pricing compared to value delivered"
+                "expensive"
               ],
               "quotes": [
                 {
-                  "text": "netcraft proposal they're pretty high",
-                  "call": "2025-12 Bolster",
+                  "text": "I don't know why we're spending $80,000 on vories",
+                  "call": "2025-12 Tracer",
                   "date": "Dec 2025",
-                  "amount": "~24-25k/yr"
+                  "amount": "80k/yr"
                 }
               ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Field Watch",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "monitors product claims and medical claims"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Borey",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Amazon focused"
+              ],
+              "weaknesses": [
+                "main focus is unauthorized sellers on Amazon only"
+              ],
+              "quotes": [
+                {
+                  "text": "Their main focus is unauthorized sellers on Amazon",
+                  "call": "2025-12 Tracer",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "limited to unauthorized sellers"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "slow to respond with information"
+              ],
+              "quotes": [
+                {
+                  "text": "we're still waiting on them to get back with us with more information",
+                  "call": "2025-12 Tracer",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Tracer",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they use Tracer AI for their monitoring",
+                  "call": "2025-12 Tracer",
+                  "date": "Dec 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
             },
             "product_features": {
               "strengths": [],
@@ -7019,7 +7826,7 @@
     }
   },
   "_meta": {
-    "version": 8,
+    "version": 9,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -7051,7 +7858,12 @@
       "1Z0PqR_x1sHxLAOUCCoyGV2J9UO7-Rx4a4w07PCO0BwA",
       "1o8Gg76pUMDWBUANlRoqMn5Bv7Ewx8t2wCxo6Y4g4eFM",
       "1iKV7R6A4U6I0fEEZM4vfgCHl_73uvtHLFAVeVhjx41Q",
-      "1Dgj-5gj6P7Jnq-TIsm0evFmBALW3TJ3rCOKDlMPDN5M"
+      "1Dgj-5gj6P7Jnq-TIsm0evFmBALW3TJ3rCOKDlMPDN5M",
+      "12fUkjwZZWvlvNsPRMN-7_nG58hOlhuPdg3ghWIbm6vc",
+      "1UNF3bjvJslkvRZeoZf_Uudilyd88Nav008b9KUTssUY",
+      "19QBQU_p6LY16qF_nLV-6cpqF-bOZmkBCw6CpKdE1yo0",
+      "1f5yRTIdRQhl_xmAu5uU85e_LzhkCeS8224PCQwAIpZc",
+      "1U5-llig7fcZiVKRTY9Z95wTWS_viW31OT_-b9c00900"
     ]
   }
 }
