@@ -10947,7 +10947,7 @@
     },
     "2025-08": {
       "label": "Aug 2025",
-      "total_calls": 5,
+      "total_calls": 8,
       "competitors": [
         {
           "name": "Bolster",
@@ -11313,8 +11313,178 @@
           }
         },
         {
+          "name": "Opsec",
+          "mention_count": 17,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Provided fraudulent website coverage"
+              ],
+              "weaknesses": [
+                "Limited fraudulent website coverage historically",
+                "Archaic platform",
+                "No standalone website enforcement capability",
+                "Inconsistent enforcement responsiveness",
+                "Limited proactive coverage on emerging channels"
+              ],
+              "quotes": [
+                {
+                  "text": "I didn't even have fraudulent website coverage with Opsec. They would just take it down for me periodically as a favor.",
+                  "call": "2025-08 Opsec #2",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Their platform was archaic",
+                  "call": "2025-08 Opsec #2",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "I didn't even have fraudulent website coverage with Opsec. They would just take it down for me periodically as a favor.",
+                  "call": "2025-08 Opsec #1",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "I didn't even have fraudulent website coverage with Opsec. They would just take it down for me periodically as a favor.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scope compared to Red Points",
+                "Archaic platform",
+                "Limited service scope compared to competitors",
+                "Limited scope of services compared to modern solutions"
+              ],
+              "quotes": [
+                {
+                  "text": "Their platform was archaic. Someone else said the exact same thing verbatim.",
+                  "call": "2025-08 Opsec #1",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Ad-hoc takedown capability"
+              ],
+              "weaknesses": [
+                "Reactive rather than proactive",
+                "Ad-hoc enforcement rather than systematic",
+                "Infrequent and unreliable takedowns"
+              ],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Billing errors and account suspension notices",
+                "Unresponsive to payment proof",
+                "Multiple billing failures in short period",
+                "Billing dysfunction and payment processing errors",
+                "Repeated account suspension notices despite payment",
+                "Poor account management responsiveness",
+                "Billing issues and account suspension threats",
+                "Poor billing accuracy and record-keeping",
+                "Unresponsive to client payment documentation"
+              ],
+              "quotes": [
+                {
+                  "text": "They've been sending us late notices and notices of account suspension for bills already paid.",
+                  "call": "2025-08 Opsec #2",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Four times within the last month we had to send proof of payment for covered invoices.",
+                  "call": "2025-08 Opsec #2",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "They've been sending us late notices for bills we already paid, suspending accounts four times in one month.",
+                  "call": "2025-08 Opsec #1",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Constantly having to send proof of payment for invoices we had already covered.",
+                  "call": "2025-08 Opsec #1",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "They've been sending us late notices...notices of they're getting ready to like shut down or suspend our accounts for bills that we had already paid.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Constantly having to send proof of payment four times within the last month.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Their platform was archaic.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher cost than Red Points proposal",
+                "Higher cost than Red Points alternative",
+                "Billing disputes and administrative errors",
+                "Customer perception of high cost relative to service"
+              ],
+              "quotes": [
+                {
+                  "text": "105 is obviously less than what we're paying now with Opsec.",
+                  "call": "2025-08 Opsec #2",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Outdated platform interface",
+                "Archaic platform design",
+                "Limited modern feature set",
+                "Outdated and archaic platform"
+              ],
+              "quotes": [
+                {
+                  "text": "Their platform was archaic.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Corsearch",
-          "mention_count": 13,
+          "mention_count": 16,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -11531,6 +11701,107 @@
           }
         },
         {
+          "name": "Tracer",
+          "mention_count": 6,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Unwilling to show user interface to prospects",
+                "Limited transparency with potential clients"
+              ],
+              "quotes": [
+                {
+                  "text": "They wouldn't show me their user interface. Didn't help me at all.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "I wanted to see the user interface. They wouldn't show it to me.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Historical product performed well for enterprise clients"
+              ],
+              "weaknesses": [
+                "Lacks willingness to demonstrate capabilities"
+              ],
+              "quotes": [
+                {
+                  "text": "I used to work with Aptitex...doing 500 to 1,000 takedowns a month over Amazon.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Capable of handling high-volume takedowns historically"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Poor responsiveness to client information requests",
+                "Unwilling to provide product demonstrations"
+              ],
+              "quotes": [
+                {
+                  "text": "They were going to send me some information...they wouldn't show me.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Perceived as expensive relative to value"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "User interface not demonstrated or visible to prospects"
+              ],
+              "quotes": [
+                {
+                  "text": "I can't promote it if I don't know what it is.",
+                  "call": "2025-08 Tracer",
+                  "date": "Aug 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Marqvision",
           "mention_count": 3,
           "categories": {
@@ -11589,10 +11860,318 @@
           }
         }
       ]
+    },
+    "2025-07": {
+      "label": "Jul 2025",
+      "total_calls": 2,
+      "competitors": [
+        {
+          "name": "Bolster",
+          "mention_count": 42,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited social media automation capabilities",
+                "Manual enforcement on social platforms",
+                "Unclear marketplace coverage effectiveness",
+                "No direct Meta API integration claimed by Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "I don't think they're as effective on the marketplace side. Marketplace and social media are things that pop off the page.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "We see them more as like a domain impersonation provider. These issues cross several different incident types.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Lacks unlimited enforcement model as base offering",
+                "Limited breadth compared to Red Points",
+                "Cannot automate social media enforcement"
+              ],
+              "quotes": [
+                {
+                  "text": "I've heard more about it on the enforcement side. They don't have the automated capability to submit takedowns.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Detects marketplace listings effectively"
+              ],
+              "weaknesses": [
+                "Limited detection across channels",
+                "Manual processes instead of automated crawling"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Takes action on URLs provided"
+              ],
+              "weaknesses": [
+                "Humans filling out forms manually instead of API automation",
+                "Cannot keep pace with automated enforcement",
+                "Several days to remove content",
+                "Manual enforcement on social platforms",
+                "Limited marketplace takedown success"
+              ],
+              "quotes": [
+                {
+                  "text": "They have humans going to Shopee, going to Meta, going wherever to fill out those forms. Those humans can't keep up.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "Either manually or not at all. We treat paid ads like domain takedown requests via bolster. Bolster takes several days and takes it down.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Cannot scale enforcement beyond package limits",
+                "Runs out of enforcement capability without additional payment",
+                "Cannot handle high volume automation",
+                "Humans cannot keep up with volume"
+              ],
+              "quotes": [
+                {
+                  "text": "You run out of the capability to enforce without paying more for more enforcement packages.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Requires additional payment for more enforcement packages",
+                "Limited enforcement in base tier"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [
+                "UI-based takedown reporting",
+                "Real-time reporting updates"
+              ],
+              "weaknesses": [
+                "No API automation for takedowns",
+                "No automated social media enforcement",
+                "Limited automation capabilities overall",
+                "No API integration with Meta"
+              ],
+              "quotes": [
+                {
+                  "text": "The reporting in Bolster from a takedown perspective is all like UI based and updated fairly automatically.",
+                  "call": "2025-07 Bolster",
+                  "date": "Jul 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Brandshield",
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited website detection capabilities",
+                "Does not scan metadata, H1 tags, or page content"
+              ],
+              "quotes": [
+                {
+                  "text": "for website detection, that's something you might wanna be mindful of",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "they're based in Israel. I'm not sure where their support system is",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited in functionality compared to Red Points",
+                "Marketplace-focused, less comprehensive suite"
+              ],
+              "quotes": [
+                {
+                  "text": "they're definitely gonna be cheaper than us but we feel that our technology is gonna be able to provide like effective coverage",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Only detects domain names, not hidden/obscured domains",
+                "Limited ability to detect counterfeit using logos/branding in page content"
+              ],
+              "quotes": [
+                {
+                  "text": "if it's like bagelinioutlet.com, super easy to find. But if it's like a string of 20 letters that has no connection with the branding in the domain, that's a little bit more difficult",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Support system location unclear"
+              ],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Significantly cheaper than Red Points"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "they're definitely gonna be cheaper than us",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "they're a little bit different because it's not an all in. So they do. So like, listen, when I tag on...they have a lot of add ons",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Add-on model increases total cost when features combined",
+                "Less transparent feature bundling"
+              ],
+              "quotes": [
+                {
+                  "text": "think of it as like the Shopify e-commerce, you buy the base service And then you start adding apps to it",
+                  "call": "2025-07 Brandshield",
+                  "date": "Jul 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
     }
   },
   "_meta": {
-    "version": 14,
+    "version": 15,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -11654,7 +12233,12 @@
       "1rdZ9PWEq_rsiFw3fitOqWO3wNRHpmpgBrqzRR5BMrck",
       "15MZAz0QG5xKp42UFDNwlgRwYxWHCQX8Eh3vXhkOTX64",
       "1NEzwaF5ZxJYeW8LDq4a3tSsn-W_LG07Ttt4io7sz2hU",
-      "1jiN_DAAoigXK9gMCt1LrjX2pWTUK7GYpDQz9myxIgEM"
+      "1jiN_DAAoigXK9gMCt1LrjX2pWTUK7GYpDQz9myxIgEM",
+      "14-fBHqluU9CUjmIYhMNzXDcR2wKZq-sFtT61GkmEUEA",
+      "10GfByY7QBhy4_dikUcybV8nuLJ0qwLKSmUGelKcA3Vw",
+      "1xsZEZja-oP3DH9F7Ut8bokN3OO8Jou8PF8_CfZ6oTpg",
+      "1ld5A17XzWaYWbej3hsYW8U_LRlY7gIRzPgceENhzhuo",
+      "1MoK6SykiucjyLvtKqfiM0VjOnbJSST51M50_XxzyDZ8"
     ]
   }
 }
