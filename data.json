@@ -13190,7 +13190,7 @@
     },
     "2025-06": {
       "label": "Jun 2025",
-      "total_calls": 4,
+      "total_calls": 5,
       "competitors": [
         {
           "name": "Opsec",
@@ -13845,6 +13845,109 @@
           }
         },
         {
+          "name": "Netcraft",
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers social media and websites"
+              ],
+              "weaknesses": [
+                "Limited marketplace coverage",
+                "Does not cover Alibaba",
+                "Does not cover Aliexpress",
+                "Does not cover Dhgate",
+                "Does not have full marketplace coverage"
+              ],
+              "quotes": [
+                {
+                  "text": "it seems that with Netcraft, I don't think you have marketplace coverage. I don't think that you have meta ads coverage either.",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "Marketplace, like they don't cover Alibaba, for example.",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                },
+                {
+                  "text": "I know Alibaba, Aliexpress, Dhgate. They're not included.",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not specialize in apparel and footwear",
+                "Missing key marketplace coverage"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not detect mobile-only websites"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Insufficient account management attention",
+                "Not proactive in monitoring"
+              ],
+              "quotes": [
+                {
+                  "text": "I don't think we're really getting a lot of attention right now on our account with the Netcraft.",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher pricing than Red Points proposal"
+              ],
+              "quotes": [
+                {
+                  "text": "with Netcraft, the coverage was about 45,000 for just social and websites, almost 28,000, almost 17,000",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025",
+                  "amount": "45k for social/websites coverage"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Authentics",
           "mention_count": 3,
           "categories": {
@@ -13954,6 +14057,82 @@
           }
         },
         {
+          "name": "Bolster",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not specialize in apparel and footwear",
+                "Limited marketplace coverage compared to Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcrab, and you mentioned a bolster, they're great companies, they're great companies. However, they don't specialize on apparel and footwear, and this lifestyle fashion, right?",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Not specialized for apparel/footwear brands"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Junior account managers with limited attention",
+                "Lack of proactive account management"
+              ],
+              "quotes": [
+                {
+                  "text": "we used a bolster. And in both instances, the account manager was very junior, so we haven't been really getting a lot of attention",
+                  "call": "2025-06 Bolster",
+                  "date": "Jun 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "IP House",
           "mention_count": 1,
           "categories": {
@@ -14013,7 +14192,7 @@
     }
   },
   "_meta": {
-    "version": 17,
+    "version": 18,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -14090,7 +14269,8 @@
       "1DX9_R3KHNLglnN3eFwHRcHMG931dp4f3qpiNroPkMLA",
       "1PiLjfhRheEBIzwgUaSu94-1SGk8-oS7VVBPrPCcdHuU",
       "1_q4_tv7XeGGuiEPOoRDiCs9N2uSvIaxdppg1G_3lPk8",
-      "1eN53_yYg0Ca4bu9-NEHeQfzm5ZsIbX1k_3R-VLDfvTE"
+      "1eN53_yYg0Ca4bu9-NEHeQfzm5ZsIbX1k_3R-VLDfvTE",
+      "1rNBUUOGc8RdBzTWV7JrnRMvOzLCD5Bmw1UNhF5MiKVM"
     ]
   }
 }
