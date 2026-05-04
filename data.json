@@ -10005,11 +10005,11 @@
     },
     "2025-09": {
       "label": "Sep 2025",
-      "total_calls": 5,
+      "total_calls": 6,
       "competitors": [
         {
           "name": "Brandshield",
-          "mention_count": 13,
+          "mention_count": 14,
           "categories": {
             "coverage": {
               "strengths": [
@@ -10036,7 +10036,8 @@
             "service_offering": {
               "strengths": [
                 "Full suite brand protection offering",
-                "Website and brand protection offerings"
+                "Website and brand protection offerings",
+                "Offers website and brand protection services"
               ],
               "weaknesses": [],
               "quotes": []
@@ -10195,6 +10196,102 @@
                   "date": "Sep 2025"
                 }
               ]
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 14,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow response on marketplace enforcement",
+                "Limited marketplace coverage compared to Red Points",
+                "Gaps in emerging market coverage (Brazil, Indonesia, Philippines)"
+              ],
+              "quotes": [
+                {
+                  "text": "the thing, the challenge here is, you know, it's just slow response",
+                  "call": "2025-09 Marqvision",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Throttled manual search capability"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow enforcement response times",
+                "Requires manual reporting of findings",
+                "Ineffective whack-a-mole enforcement approach",
+                "Poor performance on repeat infringements"
+              ],
+              "quotes": [
+                {
+                  "text": "the challenge here is, you know, it's just slow response. You know, and then we have to report like what website we found",
+                  "call": "2025-09 Marqvision",
+                  "date": "Sep 2025"
+                },
+                {
+                  "text": "Their first ever UDRP filing found to have engaged in abuse of process",
+                  "call": "2025-09 Marqvision",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Poor customer support responsiveness",
+                "Limited proactive monitoring"
+              ],
+              "quotes": [
+                {
+                  "text": "i haven't heard much from Marqvision at least on my you know lately",
+                  "call": "2025-09 Corsearch",
+                  "date": "Sep 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited automation capabilities",
+                "Manual enforcement process required"
+              ],
+              "quotes": []
             }
           }
         },
@@ -10360,7 +10457,7 @@
         },
         {
           "name": "Corsearch",
-          "mention_count": 7,
+          "mention_count": 10,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -10442,12 +10539,23 @@
             },
             "pricing": {
               "strengths": [],
-              "weaknesses": [],
-              "quotes": []
+              "weaknesses": [
+                "Analyst hour model with additional charges for expansion"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch relies on those analyst hours and then anything outside of those analyst hours...that's going to be an extra charge",
+                  "call": "2025-09 Marqvision",
+                  "date": "Sep 2025"
+                }
+              ]
             },
             "product_features": {
               "strengths": [],
-              "weaknesses": [],
+              "weaknesses": [
+                "Results expansion requires additional fees",
+                "Labor-intensive analyst-driven model"
+              ],
               "quotes": []
             }
           }
@@ -10503,70 +10611,6 @@
               "strengths": [],
               "weaknesses": [],
               "quotes": []
-            },
-            "validation_prioritization": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "pricing": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "product_features": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            }
-          }
-        },
-        {
-          "name": "Marqvision",
-          "mention_count": 2,
-          "categories": {
-            "coverage": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "service_offering": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "detection": {
-              "strengths": [],
-              "weaknesses": [
-                "Throttled manual search capability"
-              ],
-              "quotes": []
-            },
-            "enforcement": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "scale": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "accuracy": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": []
-            },
-            "service_level": {
-              "strengths": [],
-              "weaknesses": [],
-              "quotes": [
-                {
-                  "text": "i haven't heard much from Marqvision at least on my you know lately",
-                  "call": "2025-09 Corsearch",
-                  "date": "Sep 2025"
-                }
-              ]
             },
             "validation_prioritization": {
               "strengths": [],
@@ -10903,11 +10947,11 @@
     },
     "2025-08": {
       "label": "Aug 2025",
-      "total_calls": 1,
+      "total_calls": 5,
       "competitors": [
         {
           "name": "Bolster",
-          "mention_count": 47,
+          "mention_count": 52,
           "categories": {
             "coverage": {
               "strengths": [
@@ -10937,7 +10981,9 @@
                 "Provides scam email inbox automation capabilities",
                 "Includes domain monitoring and malware detection"
               ],
-              "weaknesses": [],
+              "weaknesses": [
+                "Cyber security focus rather than brand protection"
+              ],
               "quotes": []
             },
             "detection": {
@@ -10945,11 +10991,13 @@
                 "Detects malicious websites hidden in complex domains",
                 "Found 90% coverage of takedowns from scam email source",
                 "Identifies phishing sites and malware websites",
-                "Scans subpages and HTML content for brand mentions"
+                "Scans subpages and HTML content for brand mentions",
+                "Found unique website hidden within malware"
               ],
               "weaknesses": [
                 "Red Points detected 800 domains vs Bolster's limited examples",
-                "Lacks some detection capabilities Red Points has"
+                "Lacks some detection capabilities Red Points has",
+                "Detection results similar or less comprehensive than Netcraft"
               ],
               "quotes": [
                 {
@@ -10960,6 +11008,11 @@
                 {
                   "text": "they have a feed of malicious websites so there's feeds of, I think it's mostly antivirus companies",
                   "call": "2025-08 Bolster",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Maybe Ballstar was also, so Ballstar and Netcraft were on good level with detection",
+                  "call": "2025-08 Netcraft",
                   "date": "Aug 2025"
                 }
               ]
@@ -11008,8 +11061,17 @@
             },
             "service_level": {
               "strengths": [],
-              "weaknesses": [],
-              "quotes": []
+              "weaknesses": [
+                "Junior account managers providing insufficient support",
+                "Not specialized in apparel/fashion"
+              ],
+              "quotes": [
+                {
+                  "text": "With bolster, the account manager was very junior, so we haven't been really getting a lot of attention.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                }
+              ]
             },
             "validation_prioritization": {
               "strengths": [
@@ -11023,7 +11085,8 @@
                 "Competitive pricing compared to alternatives"
               ],
               "weaknesses": [
-                "More expensive than Red Points' competitive offer"
+                "More expensive than Red Points' competitive offer",
+                "Slightly cheaper than Red Points"
               ],
               "quotes": [
                 {
@@ -11038,7 +11101,8 @@
               "strengths": [
                 "Offers automation of takedown processes",
                 "Provides analytics and reporting on email threats",
-                "Has built-out stats, numbers, and types tracking"
+                "Has built-out stats, numbers, and types tracking",
+                "Covers apps including WhatsApp and Telegram"
               ],
               "weaknesses": [],
               "quotes": [
@@ -11050,12 +11114,485 @@
               ]
             }
           }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 35,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Incomplete marketplace coverage (Aliexpress, DHgate not covered)",
+                "Limited or unclear marketplace specificity in contracts",
+                "Unclear if meta ads coverage actually exists",
+                "Missing proactive monitoring on detected sites",
+                "Only 3 of 54 fake websites removed"
+              ],
+              "quotes": [
+                {
+                  "text": "They cover some but not all. Aliexpress and DHgate, I asked them about it and they said they're not covered.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "The marketplaces aren't specified on what they are covering. It's not spelled out.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "51 are left unattended. 50 sites being unattended, that's a lot. Like not being detected and enforced.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Covers websites and social media"
+              ],
+              "weaknesses": [
+                "No clear portfolio specialization in fashion/apparel",
+                "Limited to one fashion client testimonial vs Red Points' 900+ fashion clients"
+              ],
+              "quotes": [
+                {
+                  "text": "The only client video testimonial they have for a fashion client is yourself.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Found broad domain results",
+                "Detected malware websites with hidden brand usage"
+              ],
+              "weaknesses": [
+                "Not detecting all fake websites",
+                "Failing to detect marketplace listings proactively",
+                "Limited detection on social media profiles",
+                "Missed some standalone sites that Red Points found",
+                "Did not catch certain domains competitors identified"
+              ],
+              "quotes": [
+                {
+                  "text": "There shouldn't be 20 Facebook profiles. There shouldn't be seven profiles on Tiktok. If you do have any marketplace coverage, there shouldn't be 4100 plus individual marketplace listings.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Netcraft was pretty good...on a good level with the detection",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "They had one interesting find, which nobody else were able to find...a malware website",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Successfully removed some fake websites",
+                "100% success rate on takedowns",
+                "Varied speed from next day to several months"
+              ],
+              "weaknesses": [
+                "Slow or non-existent enforcement on detected items",
+                "Cannot enforce on major marketplaces like Aliexpress and DHgate",
+                "Passive approach to removals",
+                "Slow enforcement on some cases (3-4 months)"
+              ],
+              "quotes": [
+                {
+                  "text": "They did remove three out of the 50 that we found. 51 are left unattended.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "There was a hundred percent success in the time that we were with them on all attacks",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Some attacks taken down literally like next day, then couple took three or four months",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Unable to handle volume of 4,000+ marketplace listings",
+                "Cannot scale enforcement across multiple marketplaces"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Had false positives in domain detection results"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Junior account managers providing insufficient attention",
+                "Lack of proactive account management",
+                "Customers must flag issues rather than team being proactive"
+              ],
+              "quotes": [
+                {
+                  "text": "The account manager was very junior, so we haven't been really getting a lot of attention.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "I'm constantly reporting issues for them, and flagging them. They need to be more on top of things.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher pricing than Red Points for limited coverage",
+                "More expensive than Red Points",
+                "Sells takedown credits separately"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft, the coverage was about 45,000 for just social and websites, almost 28,000, almost 17,000.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025",
+                  "amount": "45k/yr (social/websites)"
+                },
+                {
+                  "text": "Netcraft is a bit more expensive and let's say the results were similar",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "With net craft, you can buy like a pack of 10 takedown credits at $3,000, basically $300 per takedown",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025",
+                  "amount": "$3,000 for 10 credits / $300 per takedown"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Vague contract language on coverage specifics",
+                "No explicit Google Ads mention in contracts despite claimed coverage",
+                "More complicated platform",
+                "Not straightforward UX"
+              ],
+              "quotes": [
+                {
+                  "text": "The Google, the word Google was not mentioned anywhere in the contract.",
+                  "call": "2025-08 Marqvision",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "Netcraft was very complicated, let's say, and not straightforward, but they had a lot of features",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Corsearch",
+          "mention_count": 13,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited to specific marketplaces only",
+                "Does not monitor Alibaba",
+                "Does not monitor Shopify or Shopee",
+                "No coverage for Groupon"
+              ],
+              "quotes": [
+                {
+                  "text": "I don't have them monitoring Walmart.com and Amazon.com. I don't even have a monitor for them on. My two soft spots, Groupon and Ebay.",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "I don't think Corsearch is monitoring Alibaba for us right now. Or Shopify, or Shopee, whatever it's called.",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Very manual with searches",
+                "Limited by analyst hours"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch is very manual with their searches",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "limited by Coresearch's analyst hours and just their manual processes",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow onboarding process",
+                "Long time before first enforcement"
+              ],
+              "quotes": [
+                {
+                  "text": "They told me like they needed three weeks for onboarding and four more weeks before their first enforcement",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scanning frequency",
+                "Not every day scanning"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch might be limited to how many hours they spend scanning. It could be within like a certain amount of times a week. But not like every day.",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Pricing higher than competitors",
+                "Cheaper than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "For Corsearch, I think their price was, the price they gave me was too high",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025",
+                  "amount": "higher than Red Points"
+                },
+                {
+                  "text": "We are slightly more expensive than them",
+                  "call": "2025-08 Netcraft",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Recently released new platform"
+              ],
+              "weaknesses": [
+                "New platform lacks maturity",
+                "Limited to 10 marketplaces or 10 regions",
+                "Not tech-first approach historically",
+                "Limited platform capability"
+              ],
+              "quotes": [
+                {
+                  "text": "they have just released a platform similar to ours, right? That's the only thing that I know, but it's fairly new",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "it's only limited to like 10 marketplaces or 10 regions",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "they historically, they haven't taken a tech first approach",
+                  "call": "2025-08 Corsearch",
+                  "date": "Aug 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Brandshield",
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Active takedown of infringements during contract period"
+              ],
+              "weaknesses": [
+                "No visibility into enforcement history after transition",
+                "Cannot access previous claims or enforcement data"
+              ],
+              "quotes": [
+                {
+                  "text": "On any items that brand shield has already made an enforcement claim on we have zero visibility into that",
+                  "call": "2025-08 Brandshield",
+                  "date": "Aug 2025"
+                },
+                {
+                  "text": "We don't have any history from what brand shield has been doing",
+                  "call": "2025-08 Brandshield",
+                  "date": "Aug 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "No handoff documentation or historical data transfer"
+              ],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "History not transferable to new platform"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Lost deal to Red Points due to lack of preparation"
+              ],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
         }
       ]
     }
   },
   "_meta": {
-    "version": 13,
+    "version": 14,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -11112,7 +11649,12 @@
       "1KrOI9uc0RxPVtbGWvUIE0DKhsENjeojU6Dka87IlGwA",
       "1aGhvnLjQDKcjCpCxmeuNSjPwWkOkz1pEeiT7jiWGMbA",
       "1lzyWYvWa6MJacNYE_xU6YXAZxhxKVys2zbpcEImJU20",
-      "1ee18JuQANOANLj3DAtZCXHi8wJcZ2vhmcGWPdals9G0"
+      "1ee18JuQANOANLj3DAtZCXHi8wJcZ2vhmcGWPdals9G0",
+      "1hivdpgjmsWnXf75aDIEe-VGn3980eMKppvIjo2OFeT8",
+      "1rdZ9PWEq_rsiFw3fitOqWO3wNRHpmpgBrqzRR5BMrck",
+      "15MZAz0QG5xKp42UFDNwlgRwYxWHCQX8Eh3vXhkOTX64",
+      "1NEzwaF5ZxJYeW8LDq4a3tSsn-W_LG07Ttt4io7sz2hU",
+      "1jiN_DAAoigXK9gMCt1LrjX2pWTUK7GYpDQz9myxIgEM"
     ]
   }
 }
