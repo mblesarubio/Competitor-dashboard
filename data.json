@@ -2463,11 +2463,475 @@
     },
     "2025-H1": {
       "label": "Pre-June 2025",
-      "total_calls": 1,
+      "total_calls": 6,
       "competitors": [
         {
+          "name": "Corsearch",
+          "mention_count": 21,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Global marketplace coverage across Europe and Asia",
+                "Extensive international market visibility",
+                "Strong presence on multiple platforms including Alibaba, Shopee"
+              ],
+              "weaknesses": [
+                "Limited detection scope compared to Red Points",
+                "May miss infringements in some regions",
+                "Limited social media monitoring capabilities",
+                "Domain name provider approach limits scope"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch has been at this thing for a long time. So they should have done most of it.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "The breadth of markets, knowing what was happening with global expansion, there were markets that I wanted to capture, international markets.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They approached us mainly because of our status as their domain name provider. So social media wasn't really a big topic of discussion.",
+                  "call": "H1-2025 Corsearch #3",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "Do you guys have current coverage with social media with Corsearch?",
+                  "call": "H1-2025 Corsearch #3",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Works with large companies",
+                "Managed services capability",
+                "Multiple brand monitoring without per-brand activation fee",
+                "Revenue recovery program integration (Edison acquisition)",
+                "Trademark portfolio development services"
+              ],
+              "weaknesses": [
+                "No automated validation process",
+                "Enforcement side not as effective as detection"
+              ],
+              "quotes": [
+                {
+                  "text": "They deal with pretty large companies",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "Corsearch allowed me to run multiple brands without activating a new connection platform fee.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They were already working closely together with Edison revenue recovery program.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They were using both Proofpoint and Corsearch kind of for identification purposes, but I guess their enforcement side is not as good.",
+                  "call": "H1-2025 Corsearch #3",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Effective at finding infringements once activated",
+                "Can detect across multiple marketplace types"
+              ],
+              "weaknesses": [
+                "Not leveraging technology effectively",
+                "Lot of manual searches required",
+                "Manual process involved in detection validation",
+                "Limited image training (capped at 20,000 images with additional charges)",
+                "Detection runs less frequently than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch is even more towards the not really leveraging technology. A lot of their processes are a lot manual",
+                  "call": "H1-2025 Brandshield #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "Things are done more manually and they also offer other kind of service in terms of trademark portfolio development.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "When you get to like 20,000 images, we've got to charge you extra.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Active enforcement across markets",
+                "Successfully removed significant volume from Europe",
+                "Responsive to activation requests"
+              ],
+              "weaknesses": [
+                "Manual enforcement process creates bottlenecks at scale",
+                "Higher window of opportunity for infringers due to manual processing",
+                "Enforcement effectiveness questioned by customers"
+              ],
+              "quotes": [
+                {
+                  "text": "They've been pretty active taking stuff down. They really did remove a ton of stuff out of Europe.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "On their side things are done more manually, meaning that the window of opportunity may be higher for infringers to execute.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "Their enforcement side is not as good.",
+                  "call": "H1-2025 Corsearch #3",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [
+                "Handles multiple brands simultaneously"
+              ],
+              "weaknesses": [
+                "Manual validation creates bottlenecks at scale",
+                "Cannot handle unlimited image training without additional costs"
+              ],
+              "quotes": [
+                {
+                  "text": "No bottlenecks at scale is what Red Points offers, unlike Corsearch's manual approach.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Relies on human analyst validation",
+                "May miss modified images and copyrighted content variations"
+              ],
+              "quotes": [
+                {
+                  "text": "They don't have the ability to do validation portion, use analyst hours",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Responsive to customer requests and activation",
+                "Provides managed services with dedicated support"
+              ],
+              "weaknesses": [
+                "Relies on analyst hours",
+                "Requires manual intervention for escalations and complex cases"
+              ],
+              "quotes": [
+                {
+                  "text": "If I say go activate, off they go.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Uses manual analyst review for validation instead of AI/ML",
+                "Validation process is not automated"
+              ],
+              "quotes": [
+                {
+                  "text": "They don't have the ability to do that validation portion. And they use what they call analyst hours.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [
+                "Competitive pricing for managed services",
+                "Bundled offerings with multiple brands"
+              ],
+              "weaknesses": [
+                "Variable pricing model",
+                "More expensive than Red Points",
+                "Variable pricing based on analyst hours",
+                "Additional charges for image training beyond 20,000"
+              ],
+              "quotes": [
+                {
+                  "text": "Corsearch was more expensive than you guys.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They might charge you or if it's like over, then you might need to buy more analyst hours.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Image training and scraping capabilities",
+                "Global reporting dashboards",
+                "Integration with revenue recovery programs"
+              ],
+              "weaknesses": [
+                "Image upload limitation (20,000 cap)",
+                "Less advanced AI/ML-driven validation",
+                "Platform upgraded customers to higher-tier service due to complexity"
+              ],
+              "quotes": [
+                {
+                  "text": "They initially started by just scraping our website and then we ended up with a hidden page to dump every image.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "Corsearch had to upgrade us to a more robust service when they realized the complexity of what it is.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Brandshield",
+          "mention_count": 19,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited to smaller cases"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandshield might be your best shot if you want to have a chat with them as well for smaller cases",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Scans only once per week, insufficient frequency",
+                "Weekly scans instead of daily",
+                "Scan frequency depends on takedown volume"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandshield, from speaking with other clients that have been with them, they usually scan once a week",
+                  "call": "H1-2025 Brandshield #2",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They have weekly scans and scan frequency depends on amount of takedowns they need to do",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "No automated validation filtering",
+                "Relies on human analyst hours for validation"
+              ],
+              "quotes": [
+                {
+                  "text": "They don't have the ability to do validation portion. They use analyst hours instead of software",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Frazzled communication",
+                "No phone numbers listed on website",
+                "Representative was frazzled and unprepared"
+              ],
+              "quotes": [
+                {
+                  "text": "The person I spoke to was very frazzled",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "They don't list phone numbers on their website",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "The person I spoke to was very frazzled though. Like it was our first time talking to someone about this.",
+                  "call": "H1-2025 Corsearch #2",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual human validation process",
+                "Variable pricing based on analyst hours"
+              ],
+              "quotes": [
+                {
+                  "text": "They might have variable pricing at end of month, allocate specific hours per week",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [
+                "Pricing slightly lower than Red Points",
+                "Lower cost entry point"
+              ],
+              "weaknesses": [
+                "Variable monthly costs",
+                "Additional fees if hours exceeded",
+                "35-45% higher pricing than Red Points on bottom end"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandschild's pricing is like a little bit less than ours",
+                  "call": "H1-2025 Brandshield #2",
+                  "date": "Pre-June 2025",
+                  "amount": "less than $24-28k/yr"
+                },
+                {
+                  "text": "They might charge you or you might need to buy more if over allocated hours",
+                  "call": "H1-2025 Brandshield #1",
+                  "date": "Pre-June 2025"
+                },
+                {
+                  "text": "range that I have from you guys is 35 to 45% higher even on the bottom end",
+                  "call": "H1-2025 Brandshield #3",
+                  "date": "Pre-June 2025",
+                  "amount": "35-45% premium vs Red Points"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Bolster",
-          "mention_count": 4,
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [
+                "Simple takedown process"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Smaller company relative to competitors"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Pricing extremely high and outrageous"
+              ],
+              "quotes": [
+                {
+                  "text": "It's definitely around the same range as the others we've seen.",
+                  "call": "H1-2025 Bolster",
+                  "date": "Pre-June 2025",
+                  "amount": "$25-$3,200/mo (same range as competitors)"
+                },
+                {
+                  "text": "Their pricing was just outrageous",
+                  "call": "H1-2025 Brandshield #2",
+                  "date": "Pre-June 2025",
+                  "amount": "$18,000/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Clean, nice dashboard",
+                "Very clean interface for lookups"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 2,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -2512,14 +2976,63 @@
             "pricing": {
               "strengths": [],
               "weaknesses": [],
-              "quotes": [
-                {
-                  "text": "It's definitely around the same range as the others we've seen.",
-                  "call": "H1-2025 Bolster",
-                  "date": "Pre-June 2025",
-                  "amount": "$25-$3,200/mo (same range as competitors)"
-                }
-              ]
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
             },
             "product_features": {
               "strengths": [],
@@ -2532,9 +3045,14 @@
     }
   },
   "_meta": {
-    "version": 2,
+    "version": 3,
     "sourceTranscripts": [
-      "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg"
+      "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
+      "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
+      "1Xi0qHQLJwKKZphRq-7GR9BuCXMcobWtJQTHqnvLYP6M",
+      "1q7tNZqtFw2i9IBOUKcNHJpogng1wykUWX-OMtksMbC0",
+      "1iZjSy_PU_x4EDnQreuQVrfjU9PiiS2xlfnuhDIfYzOM",
+      "1ogtDqlyX8FIPsP3IY4abHROS5HA31_XVpgSgcxo50SM"
     ]
   }
 }
