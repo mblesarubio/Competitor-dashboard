@@ -2463,7 +2463,7 @@
     },
     "2025-H1": {
       "label": "Pre-June 2025",
-      "total_calls": 8,
+      "total_calls": 9,
       "competitors": [
         {
           "name": "Netcraft",
@@ -2642,7 +2642,7 @@
         },
         {
           "name": "Corsearch",
-          "mention_count": 29,
+          "mention_count": 30,
           "categories": {
             "coverage": {
               "strengths": [
@@ -2887,7 +2887,8 @@
                 "Variable pricing based on analyst hours",
                 "Additional charges for image training beyond 20,000",
                 "Charges for analyst hours model",
-                "Higher cost structure than Red Points"
+                "Higher cost structure than Red Points",
+                "Charges analyst hours on top of base program"
               ],
               "quotes": [
                 {
@@ -2937,7 +2938,7 @@
         },
         {
           "name": "Brandshield",
-          "mention_count": 21,
+          "mention_count": 22,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -2963,7 +2964,8 @@
               "weaknesses": [
                 "Scans only once per week, insufficient frequency",
                 "Weekly scans instead of daily",
-                "Scan frequency depends on takedown volume"
+                "Scan frequency depends on takedown volume",
+                "Low-cost vendor with limited detection frequency"
               ],
               "quotes": [
                 {
@@ -2975,13 +2977,26 @@
                   "text": "They have weekly scans and scan frequency depends on amount of takedowns they need to do",
                   "call": "H1-2025 Brandshield #1",
                   "date": "Pre-June 2025"
+                },
+                {
+                  "text": "more low-cost vendors, like Brainshield or Centric, they detect once per week",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
                 }
               ]
             },
             "enforcement": {
               "strengths": [],
-              "weaknesses": [],
-              "quotes": []
+              "weaknesses": [
+                "Enforcements only every five days, less effective"
+              ],
+              "quotes": [
+                {
+                  "text": "they have some sort of manuality within the process, and do enforcements every five days",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
             },
             "scale": {
               "strengths": [],
@@ -3031,7 +3046,8 @@
               "strengths": [],
               "weaknesses": [
                 "Manual human validation process",
-                "Variable pricing based on analyst hours"
+                "Variable pricing based on analyst hours",
+                "Manual processes reduce effectiveness"
               ],
               "quotes": [
                 {
@@ -3044,7 +3060,8 @@
             "pricing": {
               "strengths": [
                 "Pricing slightly lower than Red Points",
-                "Lower cost entry point"
+                "Lower cost entry point",
+                "Lower cost option"
               ],
               "weaknesses": [
                 "Variable monthly costs",
@@ -3075,7 +3092,8 @@
               "strengths": [],
               "weaknesses": [
                 "Somewhat similar story to Corsearch",
-                "Utilize some technologies, certainly not as advanced"
+                "Utilize some technologies, certainly not as advanced",
+                "Some manuality required in process"
               ],
               "quotes": [
                 {
@@ -3166,6 +3184,70 @@
           }
         },
         {
+          "name": "Tracer",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Charges analyst hours on top of program cost"
+              ],
+              "quotes": [
+                {
+                  "text": "they are going to charge you analyst hours, which add up to, actually add up typically more than the actual program itself",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
           "name": "Marqvision",
           "mention_count": 2,
           "categories": {
@@ -3218,6 +3300,154 @@
               "strengths": [],
               "weaknesses": [],
               "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Zerofox",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "Offers full package when only targeted solution needed"
+              ],
+              "quotes": [
+                {
+                  "text": "Zerofox provided more than we were after, a full package of sorts with more costs",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Expensive full-package pricing not justified for limited needs"
+              ],
+              "quotes": [
+                {
+                  "text": "they didn't need half that stuff, so they said speak to Redpoints guys",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Overly comprehensive offering for smaller companies"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Digital Shadows",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [
+                "No longer offers standalone solutions, requires full package"
+              ],
+              "quotes": [
+                {
+                  "text": "they don't offer that solution anymore on its own, you have to get the full package",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Forces expensive full-package pricing"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Not fit for purpose for targeted needs"
+              ],
+              "quotes": [
+                {
+                  "text": "not fit for purpose",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
             }
           }
         },
@@ -3285,6 +3515,130 @@
                   "date": "Pre-June 2025"
                 }
               ]
+            }
+          }
+        },
+        {
+          "name": "Opsec",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Charges analyst hours on top of base cost"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Centric",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Low-cost vendor with infrequent detection"
+              ],
+              "quotes": [
+                {
+                  "text": "more low-cost vendors like Centric detect once per week",
+                  "call": "H1-2025 Tracer",
+                  "date": "Pre-June 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Lower cost"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
             }
           }
         }
@@ -11863,11 +12217,11 @@
     },
     "2025-07": {
       "label": "Jul 2025",
-      "total_calls": 2,
+      "total_calls": 6,
       "competitors": [
         {
           "name": "Bolster",
-          "mention_count": 42,
+          "mention_count": 44,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -12000,6 +12354,168 @@
           }
         },
         {
+          "name": "Corsearch",
+          "mention_count": 24,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Poor international coverage",
+                "Limited marketplace detection capability",
+                "Missing some threat categories"
+              ],
+              "quotes": [
+                {
+                  "text": "Right now you're using Corsearch, right? They don't have any good coverage internationally.",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "While Corsearch is great, there can be some areas where they may be missing out on your current brand prediction.",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers domain watching service",
+                "Includes watch service alongside monitoring"
+              ],
+              "weaknesses": [
+                "Limited service breadth compared to competitors",
+                "Not expanding service offerings adequately"
+              ],
+              "quotes": [
+                {
+                  "text": "Our Corsearch costs also include the watch service as well. We have both services with them.",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [
+                "Inconsistent detection performance",
+                "Fails to find all relevant infringements"
+              ],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Pushback on non-trademark infringement removals",
+                "Difficulty enforcing brand abuse cases",
+                "Limited flexibility on enforcement interpretation"
+              ],
+              "quotes": [
+                {
+                  "text": "Platforms were not willing to take down the item without direct trademark infringement.",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited enforcement capacity per month",
+                "Analyst hours capped and insufficient"
+              ],
+              "quotes": [
+                {
+                  "text": "We had a cutoff there was a certain the package included up to a certain amount of enforcement hours",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Inconsistent with client's own findings",
+                "Misses obvious infringements"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Frequent account manager changes",
+                "Poor communication consistency",
+                "Lack of dedicated support stability",
+                "Minimal proactive guidance",
+                "Requires constant re-onboarding"
+              ],
+              "quotes": [
+                {
+                  "text": "Every service waiter since last course search the first thing we had research our account manager client manager customer success whichever title that company uses has changed at least what four to five times",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "We have to send back over everything that we sent to basically help them manage our account these are five times a year",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "They would have pointed out certain items that they weren't sure that within the scope",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Unclear prioritization methodology",
+                "Does not proactively flag concerning trends"
+              ],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "High cost relative to value delivered",
+                "Customers seeking to reduce spend",
+                "Higher cost model with variable hourly fees"
+              ],
+              "quotes": [
+                {
+                  "text": "Around 160 for the whole entire year is what we're paying right now. And we would like to not pay that amount.",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025",
+                  "amount": "160/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Has platform access available",
+                "Provides monthly reporting"
+              ],
+              "weaknesses": [
+                "Platform access underutilized by clients",
+                "Reports lack clear KPIs and value quantification",
+                "Monthly reporting insufficient for strategic decisions"
+              ],
+              "quotes": [
+                {
+                  "text": "We had access to the platform but honestly between the two of us we just have too much to just literally only two of us",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "We want to see a clear measure of why we're working with you",
+                  "call": "2025-07 Corsearch",
+                  "date": "Jul 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
           "name": "Brandshield",
           "mention_count": 8,
           "categories": {
@@ -12113,7 +12629,7 @@
         },
         {
           "name": "Marqvision",
-          "mention_count": 2,
+          "mention_count": 5,
           "categories": {
             "coverage": {
               "strengths": [],
@@ -12166,12 +12682,378 @@
               "quotes": []
             }
           }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 5,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited fashion/apparel client base",
+                "Only one fashion client testimonial on website"
+              ],
+              "quotes": [
+                {
+                  "text": "When we were reviewing the Netcraft website, the only client video testimonial they have for a fashion client is yourself.",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Technical approach to detection sources",
+                "Searches domain names and website content"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They got a bit technical on what are the sources of how they find it and how they use but it sounded similar to you as you have like a big list of domains",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Fast implementation upon contract signature",
+                "Immediate takedown process at onboarding"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "When we were on board with Netcraft, they were already doing a lot of stuff on the background. The minute we signed a contract, they're already up and running and start the takedown process.",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Slow website detection setup during onboarding"
+              ],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [
+                "Clearly outlines takedown process in dashboard",
+                "Shows communication frequency with registrars"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They outlined that the takedown process really well so how it will work how you will see it in a dashboard how many times they communicate back and forth with the register",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Pricing model with caps on analyst hours",
+                "Additional charges for exceeding takedown limits"
+              ],
+              "quotes": [
+                {
+                  "text": "Netcraft would need to get back to us with pricing. Either you get a certain amount of takedowns or it's unlimited.",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                },
+                {
+                  "text": "You're worse off than we were with Netcraft",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Dashboard visibility on takedown success rates",
+                "Shows communication back-and-forth logs"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Tracer",
+          "mention_count": 3,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Unavailable during summer holidays"
+              ],
+              "quotes": [
+                {
+                  "text": "A provider is away for the summer holidays, so they're not responding to you",
+                  "call": "2025-07 Tracer",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher cost model with variable hourly fees"
+              ],
+              "quotes": [
+                {
+                  "text": "You are going to be charged a fee for monitoring and then variable fee for hours analysts look at your work. 20 hours a month minimum, 100 an hour so 24 grand a year",
+                  "call": "2025-07 Tracer",
+                  "date": "Jul 2025",
+                  "amount": "24k/yr minimum"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Zerofox",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Offers unlimited takedowns"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Zero folks proposed unlimited take down because we know this is very important for you",
+                  "call": "2025-07 Netcraft",
+                  "date": "Jul 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "CSC",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher cost model with variable hourly fees"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Brandshelter",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Domain name strategy and management"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Higher cost model with variable hourly fees"
+              ],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
         }
       ]
     }
   },
   "_meta": {
-    "version": 15,
+    "version": 16,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -12238,7 +13120,12 @@
       "10GfByY7QBhy4_dikUcybV8nuLJ0qwLKSmUGelKcA3Vw",
       "1xsZEZja-oP3DH9F7Ut8bokN3OO8Jou8PF8_CfZ6oTpg",
       "1ld5A17XzWaYWbej3hsYW8U_LRlY7gIRzPgceENhzhuo",
-      "1MoK6SykiucjyLvtKqfiM0VjOnbJSST51M50_XxzyDZ8"
+      "1MoK6SykiucjyLvtKqfiM0VjOnbJSST51M50_XxzyDZ8",
+      "1wIzMybf5gCfVmxlmLUN2Y6cF_yS8KiGiTu7YZ2skj0I",
+      "1rdZhoeKMvKCgv3hIMp6AaqQZvGj8j3x3CUcqCyz2DZs",
+      "1qfV19j-YjLvYWukzrQ0dhz3YX65HE3wezCSA3DZoRlM",
+      "1_VIPYbLKOBTNXtb7Qan1h3aEYn9di6RBG4umck2OoFI",
+      "1trbtCloe2W62698Wy14eLQ-qkQi9QXMyKO7b0PJOfx4"
     ]
   }
 }
