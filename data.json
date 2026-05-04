@@ -7823,10 +7823,855 @@
           }
         }
       ]
+    },
+    "2025-10": {
+      "label": "Oct 2025",
+      "total_calls": 5,
+      "competitors": [
+        {
+          "name": "Brandshield",
+          "mention_count": 29,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited social media ad detection capability",
+                "Does not detect Meta ads effectively",
+                "Manual approach to flagging process"
+              ],
+              "quotes": [
+                {
+                  "text": "I get more tips from customers than from Brandshield on social media adverts",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Full suite brand protection service",
+                "Marketplace and website takedown services"
+              ],
+              "weaknesses": [
+                "Does not include full automation suite",
+                "Manual enforcement process required"
+              ],
+              "quotes": [
+                {
+                  "text": "They were using them for online sellers unauthorized",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Identifies domains and registrars",
+                "Daily scanning capability",
+                "Finds many infringements automatically"
+              ],
+              "weaknesses": [
+                "May miss URLs that manual searches find",
+                "Limited keyword search flexibility",
+                "Does not scan daily by default",
+                "Scans additional brands only weekly or biweekly",
+                "Requires manual verification of results",
+                "Limited image recognition capabilities"
+              ],
+              "quotes": [
+                {
+                  "text": "We are finding things in our kind of weekly search that the scan doesn't seem to find and so we're bringing some of the urls to them.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "They scan the vehicle brand all the time, additional four brands maybe once a week or two times per month",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Should have been easily captured and enforced, but clearly missed this listing",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Successfully taken down most complaints",
+                "Takes down listings via marketplace notifications"
+              ],
+              "weaknesses": [
+                "Sticky enforcement issues on specific domains",
+                "Difficulty with persistent infringements",
+                "No DMCA services mentioned",
+                "Enforces only 7-10 times per month, not daily",
+                "Manual enforcement limiting speed and scale",
+                "Slower takedown process"
+              ],
+              "quotes": [
+                {
+                  "text": "They've taken care of a lot almost all of the complaints that have gone up uh except for these two.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Our technical team got these taken down once from Shopify, and then they went back up.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "They enforce maybe seven to ten times per month, not every single day",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual bottleneck limits handling of high volumes",
+                "Cannot handle unlimited detections and enforcements"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Misses obvious counterfeits with 1300+ units sold",
+                "No optical character recognition for text in images",
+                "No product recognition technology",
+                "High false negatives"
+              ],
+              "quotes": [
+                {
+                  "text": "This easy detection for us should have been easily captured by Brandshield",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "service_level": {
+              "strengths": [
+                "Weekly meetings with customers",
+                "Responsive to customer feedback",
+                "Based in Israel with some customer support"
+              ],
+              "weaknesses": [
+                "Israel-based support causing timezone issues",
+                "Six to nine hour difference from North America",
+                "Manual approval required from users"
+              ],
+              "quotes": [
+                {
+                  "text": "Brandshield is based in Israel, nine hour difference from East Coast",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [
+                "Manual triage of results",
+                "User must manually approve all flagged items",
+                "No automatic filtering or ML-based prioritization"
+              ],
+              "quotes": [
+                {
+                  "text": "The promised automation is not really functioning because I am still approving all flagged sites manually",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "pricing": {
+              "strengths": [
+                "More affordable/economical option",
+                "Lower cost structure"
+              ],
+              "weaknesses": [
+                "Limited value relative to cost",
+                "Gaps in capability justify higher pricing from alternatives"
+              ],
+              "quotes": [
+                {
+                  "text": "We just paid them 30 grand",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025",
+                  "amount": "$30k"
+                },
+                {
+                  "text": "Brandshield is the more affordable economical option, that's why there are gaps",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Many clients have come from Brandshield because they were paid less, then saw they do not have the same job as Red Points",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not offer de-indexing requests",
+                "Limited keyword search capabilities",
+                "No DMCA services",
+                "No unlimited keywords option",
+                "No optical character recognition technology",
+                "No product recognition or image isolation features",
+                "No automated whitelist functionality",
+                "No automatic enforcement rules",
+                "Limited API integrations"
+              ],
+              "quotes": [
+                {
+                  "text": "I don't think they do de-indexing requests. I've been here for about five years. I'm not aware if they do de-indexing requests.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Does branchill offer you unlimited keywords i don't think so i don't think So",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Key difference: we have optical character recognition to read text inside images, Brandshield does not",
+                  "call": "2025-10 Brandshield",
+                  "date": "Oct 2025"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Corsearch",
+          "mention_count": 19,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers infinite marketplaces theoretically",
+                "Native Mandarin speakers for Asian marketplace translation"
+              ],
+              "weaknesses": [
+                "Misses listings on major US platforms like Amazon and eBay",
+                "Limited automatic expansion to new marketplaces",
+                "Not finding items that customers discover first",
+                "Honing in on few platforms simultaneously, not everything"
+              ],
+              "quotes": [
+                {
+                  "text": "Things show up on Amazon, things show up on Ebay, and then we're showing them those.",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "corsearch can really hone in on a few simultaneously but not like everything simultaneously",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "service_offering": {
+              "strengths": [
+                "Comprehensive service covering multiple enforcement types"
+              ],
+              "weaknesses": [
+                "Limited to certain service capabilities despite initial promises"
+              ],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [
+                "Some detection capability on major Asian marketplaces like Tokopedia",
+                "Took down malicious credential harvesting site in goodwill"
+              ],
+              "weaknesses": [
+                "Missing detection on Tokopedia, Lazada, Neighbor Shopping despite focus",
+                "Pointed terminology approach misses generic search terms",
+                "Not detecting items customers find independently",
+                "Difficult to find shapes not mentioned in listing title",
+                "Problem with shape-based detection"
+              ],
+              "quotes": [
+                {
+                  "text": "they said well it is whack-a-mole Like we're going to continue to play whack-a-mole",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Courses has a problem there because for them it's difficult to find",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Able to get items taken down when found",
+                "Pattern recognition to ban repeat offenders claimed",
+                "Successful takedown demonstration"
+              ],
+              "weaknesses": [
+                "Repetitive whack-a-mole problem - same sellers return with new accounts",
+                "Claims of IP-based bans not delivering in practice",
+                "Cannot permanently stop repeat bad actors"
+              ],
+              "quotes": [
+                {
+                  "text": "that same user will just pop back up a few days later under a slightly different name and just keep right on selling",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "they just didn't really deliver on that",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scalability despite automation tools available",
+                "Efficiency not improving despite agentic AI implementation",
+                "Hourly model limits effectiveness at scale",
+                "Operationally challenged by multiple acquisitions",
+                "Integration challenges from Frankenstein-like merger strategy"
+              ],
+              "quotes": [
+                {
+                  "text": "as more agentic AI tools have been implemented, doesn't seem like they're becoming any more efficient with their hours",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "perception is that it's kind of a Frankenstein. They're trying to put everything together",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "False negatives - missing obvious listings on major platforms"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [
+                "Unresponsive to customer frustrations about ineffectiveness",
+                "Claims of capabilities not matching delivery",
+                "Loss of specific point of contact after Centric acquisition"
+              ],
+              "quotes": [
+                {
+                  "text": "when I signed up for this and got sold the whole process, they're like, we will find everything way before you will. And they don't",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [
+                "Price increases despite perceived performance gaps",
+                "Higher cost than some alternatives"
+              ],
+              "quotes": [
+                {
+                  "text": "our initial, I think it was like $19,000 a year. And then it's been that way for two years. And now this year, they're raising the price to $23,000.",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025",
+                  "amount": "$19k-$23k/yr"
+                },
+                {
+                  "text": "they're mostly on like an hourly model as opposed to like a thorough or complete takedown model",
+                  "call": "2025-10 Corsearch",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Pattern recognition and seller linking across accounts claimed"
+              ],
+              "weaknesses": [
+                "Limited API integration mentioned",
+                "Dashboard visibility unclear for standalone sites",
+                "Integration difficulties from multiple acquisitions"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Bolster",
+          "mention_count": 15,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Quick onboarding",
+                "Multiple plan options",
+                "Multiple plan options available",
+                "Multiple different plans available"
+              ],
+              "weaknesses": [
+                "Only one plan includes unlimited takedowns",
+                "Limited to marketplace focus"
+              ],
+              "quotes": [
+                {
+                  "text": "Bolster is quick to kind of onboard. They have a plethora of different plans. I think only one includes like unlimited takedowns.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Quick to onboard"
+              ],
+              "weaknesses": [
+                "Scanning only once per day",
+                "Less frequent detection than Red Points",
+                "Scanning only once a day vs Red Points eight hours"
+              ],
+              "quotes": [
+                {
+                  "text": "They're scanning, I think like once a day, we're scanning like eight hours a day, every eight hours.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [
+                "Quick onboarding process"
+              ],
+              "weaknesses": [
+                "Slower takedown turnaround",
+                "Lower enforcement effectiveness",
+                "Lacks direct platform partnerships",
+                "Scanning only once per day vs Red Points eight times daily"
+              ],
+              "quotes": [
+                {
+                  "text": "Is it gonna take six weeks to take it down or six months to take it down? For us, our turnaround time is one to seven days.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "Bolster does the takedown on our behalf. We have not supplied anything to them along these lines.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "I think like once a day, we're scanning like eight hours a day, every eight hours",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Competitive pricing",
+                "Lower cost than Red Points full plan",
+                "Lower pricing than Red Points full plan",
+                "More affordable than Red Points full plan"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "They're right around 22. And then Netcraft is right around 22 for a couple pieces and then they go up to 30 some if we add maybe the dark web monitoring.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025",
+                  "amount": "~$22k/yr"
+                },
+                {
+                  "text": "they're right around 22",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025",
+                  "amount": "22k/yr"
+                },
+                {
+                  "text": "They're right around 22 and then Netcraft is right around 22 for a couple pieces",
+                  "call": "2025-10 Netcraft",
+                  "date": "Oct 2025",
+                  "amount": "22k/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Netcraft",
+          "mention_count": 8,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "Netcraft is right around 22 for a couple pieces and then they go up to 30 some if we add maybe the dark web monitoring.",
+                  "call": "2025-10 Bolster",
+                  "date": "Oct 2025",
+                  "amount": "~$22k-$30k/yr"
+                },
+                {
+                  "text": "Netcraft is right around 22 for a couple pieces and then they go up to 30 some if we add maybe the dark web monitoring",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025",
+                  "amount": "22k-30k+/yr"
+                },
+                {
+                  "text": "Netcraft is right around 22 for a couple pieces and then they go up to 30 some if we add maybe the dark web monitoring.",
+                  "call": "2025-10 Netcraft",
+                  "date": "Oct 2025",
+                  "amount": "22k-30k+/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Offers dark web monitoring"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Marqvision",
+          "mention_count": 7,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "Offers protection for multiple brands in single package"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "willing to propose for four brands which will be Remy Martin Luitrez Cointro and metaxa",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [
+                "Good technological capabilities",
+                "Found malicious websites using customer logo"
+              ],
+              "weaknesses": [
+                "Heavily reliant on manual processes despite automation appearance",
+                "Significant backend manual tasks"
+              ],
+              "quotes": [
+                {
+                  "text": "red point is the reference and Marqvision right now is number two in the industry",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                },
+                {
+                  "text": "lot of manual tasks because they were trying to fish and hire some people",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [
+                "Uses generative AI in enforcement reports causing client problems",
+                "Has caused lawsuits for clients",
+                "Did not take down identified issues in goodwill gesture"
+              ],
+              "quotes": [
+                {
+                  "text": "send some reports with generative ai the enforcements And this has caused some problems to some clients",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [
+                "Limited scalability due to manual backend processes",
+                "Lacks frequency needed for market cleaning"
+              ],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [
+                "Makes mistakes in enforcement decisions",
+                "Unreliable AI-generated reports"
+              ],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [
+                "Competitive pricing for multi-brand packages"
+              ],
+              "weaknesses": [],
+              "quotes": [
+                {
+                  "text": "willing to propose for four brands something around 50k",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025",
+                  "amount": "50k/yr"
+                }
+              ]
+            },
+            "product_features": {
+              "strengths": [
+                "Appears highly automated on surface"
+              ],
+              "weaknesses": [
+                "Backend lacks true automation",
+                "Reliant on manual task processing"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Vorys",
+          "mention_count": 2,
+          "categories": {
+            "coverage": {
+              "strengths": [
+                "Covers Amazon and Walmart in US"
+              ],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [
+                "White-label tool offering available"
+              ],
+              "weaknesses": [
+                "Different operational model than Red Points"
+              ],
+              "quotes": [
+                {
+                  "text": "they also have a tool that they white label",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [
+                "Weekly meeting cadence with clients"
+              ],
+              "weaknesses": [
+                "Six-stage enforcement process lacking real-time visibility"
+              ],
+              "quotes": [
+                {
+                  "text": "we meet with them every week, and then we discuss six-stage enforcement process",
+                  "call": "2025-10 Marqvision",
+                  "date": "Oct 2025"
+                }
+              ]
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [
+                "Does not have platform visibility beyond reporting"
+              ],
+              "quotes": []
+            }
+          }
+        },
+        {
+          "name": "Molester Ai",
+          "mention_count": 1,
+          "categories": {
+            "coverage": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_offering": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "detection": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "enforcement": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "scale": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "accuracy": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "service_level": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "validation_prioritization": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "pricing": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            },
+            "product_features": {
+              "strengths": [],
+              "weaknesses": [],
+              "quotes": []
+            }
+          }
+        }
+      ]
     }
   },
   "_meta": {
-    "version": 9,
+    "version": 10,
     "sourceTranscripts": [
       "1f1sEYTSJceiduEYqbooB5R-U81gr1-maMH-WX73k7Xg",
       "1mKKQWMMj8DnIQCA8aQu5dmcDmHlOnAtu6HB-jAJ3Au0",
@@ -7863,7 +8708,12 @@
       "1UNF3bjvJslkvRZeoZf_Uudilyd88Nav008b9KUTssUY",
       "19QBQU_p6LY16qF_nLV-6cpqF-bOZmkBCw6CpKdE1yo0",
       "1f5yRTIdRQhl_xmAu5uU85e_LzhkCeS8224PCQwAIpZc",
-      "1U5-llig7fcZiVKRTY9Z95wTWS_viW31OT_-b9c00900"
+      "1U5-llig7fcZiVKRTY9Z95wTWS_viW31OT_-b9c00900",
+      "1Y3m4Q5pgqtvHvB8ctSLjthzRwZyN1dp7UjI6e1o5PbU",
+      "1QkFNzb3WBGcoHsaambEUOFK6mGQOyHQXVk1r5I9_Puk",
+      "16oEjEqCxGUy-GkEV3og0ZS4ZSs2ibudtn9M0MIsDrcg",
+      "1WtDI5FfxEG7En6B0TU7N3O8mKSLS_fzepb2WB_DYDNw",
+      "1zSYiIK51ZBMYntZpRTW0ftMMP8cOxZyrSEr_nKCuaUw"
     ]
   }
 }
